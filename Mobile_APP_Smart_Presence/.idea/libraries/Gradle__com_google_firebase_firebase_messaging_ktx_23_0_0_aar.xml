@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-messaging-ktx:23.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f148826523ba22d9ce6cf2d0b6f4a586/transformed/jetified-firebase-messaging-ktx-23.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/acf0910c3d2197e6bb6f9731a948049f/transformed/jetified-firebase-messaging-ktx-23.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a666fe90d6b431bddfa2334df513bd8f/transformed/jetified-firebase-messaging-ktx-23.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0c93be0d8df91fdeb6eb4ef93d51ce23/transformed/jetified-firebase-messaging-ktx-23.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e81a68250fe0a66f99dade7aec097ad8/transformed/jetified-firebase-messaging-ktx-23.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/85ea89313363f7f7d57a505b55cb12d6/transformed/jetified-firebase-messaging-ktx-23.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5084c7219c29085dc2d2d6ec643c649a/transformed/jetified-firebase-messaging-ktx-23.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5084c7219c29085dc2d2d6ec643c649a/transformed/jetified-firebase-messaging-ktx-23.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/5084c7219c29085dc2d2d6ec643c649a/transformed/jetified-firebase-messaging-ktx-23.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-messaging-ktx/23.0.0/9714ac7b294d2d3d748f95c6bb35e46cf77c397f/firebase-messaging-ktx-23.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-messaging-ktx/23.0.0/310d43119e748f7fcdd871e397d6aa0905f94cd6/firebase-messaging-ktx-23.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

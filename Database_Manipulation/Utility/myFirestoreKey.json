@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "ip-polito-app-data",
+  "private_key_id": "dd03f14e145bf19c058425f2a19762408308fa8b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCO4nun40jVYsU9\nlNL71km99OskW44TaELwYNYNLWiwm6u6aG6AolVLUrQHuzBg1KJ7/0lM2ONjD0Oz\nsM0y8Ccd/FD+blMHuxDPL1ulea9c0V87AJw/GcMCXL4CJw8B4Eoo3dp6CiEhW+IP\novGgooLQviZ18+GyM/xSUjO1OJCQUNPP80UxOwtXYU1U3duONL/S/Mcv1EY+4Iwu\ne65NAgDK0ItmPC8eI0NPHeLqBUQm85LdI6VL7cU09r1Gft819rt+szb+qGfQ7eoQ\niVRnafwJVZKe5vzxx8gTWlLeAamHM4MQ+Vg/owYYvpiNT4K897pEh8dh/+4jydI7\nfp0+Tny/AgMBAAECggEAIhH5IFg+xrrtgziYcnpvTP84jovSPehvhbfhcnTwcKQ9\n943tQ3jx06sdyHYnG/+32s9NoChbWASMxS0UUOAYw7qlaXXPEJnXcT++n597ZCt8\nhKopl5ZB/K82k3bSykS8CjCUZuNBcR3iso3NBduaS8H7k8aae46PzOVS9RROzEpO\nU3YRHK3Gd3TDUng/N6ngatD0m941g12ZpPMESCAmoewnXwT7NBWYLJEzm/KsB9Gd\nyEzsSnZcaLs/+9qVlOdagUwZNWbvfIrMs9ZZLxJoXSMQzfGX78uLIIDJu23dPZ1r\nHhe2kz7vri4LZ9RImsB5wOWuv+sq0Pa3Gd8b/jd7IQKBgQDJQYG8rju/2iOSoTyU\neQ+kFrENT1OVHQOEZeb6/9PkWHwhgo8ff+zAw5ceLG0S3Lx4LVO3SaUmfisxLOjf\n6yHUDrljkzBd6IrFKu8zYIGRqYs/cD29wqwaiq/rYFOAV1L6x5RacHh7xU6lXcLi\nzqfnWAwAC1vQQy5LYbFQ/8I30QKBgQC1wEmE7aD/jijtjBuGSRL0s9Yt0IiIWSq2\nlfdhlhKPi24pQomwVvzbmCrH/4btJkd1vR6BB7ppKPuI1pdM96EIQY5aL34NfNGr\nN9Ju6oIi27Zfa12t1mA4lSqa7TLTsspbDEKP51qW9FhI7kGSduLs1XW07oTheaN4\njmBPrd8fjwKBgQCKmdCNbri7YbGJ8/zSi6UX7oC0l+MKGFcpwTwXtEPrSH0EXvPO\nT71u68SRBSuBB//MC/tRiShxoAaC8VjXjQlZD2LhjqaKpfGb4/ukOFxDQq4hXF1I\n6F66ULTitw4KnxkImJY0yqxPIQ0OmcnzhTrg+iQZi7kJbprdU0RYcisBYQKBgGh+\nYAZz1J947SD974k6FBLqHhaDESxLD5qgB/VsIcmzoSdJoP3oVUIvb1FDISDRZD5V\n9+a5ObxiGpOmxKA0srmbbyt8qJ06iRVGZ87rNtyxs12Sze43FWUSpcci3pkF7v9/\nwfkYS2YEn4l2qe56OaduZlka1P0JQSn7uXW2AlUTAoGBAIrcOGKYlaNDhdCR0AnA\n20KQcnklATEyU2UzGtgkSDh3jOUSF3t6dCh2tqD51/8rX0hkmzmpxYzf4UYoOeB4\nUQUvbiAl85JznJX+NfKcr3KLpyXb79PTbYxtn2BNv2OZAY/aBlwJWehyn9AjJJA3\nQ2q5tQ5KoFTl0cVlJbPyc8Vg\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-31n3r@ip-polito-app-data.iam.gserviceaccount.com",
+  "client_id": "109946223932628599541",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-31n3r%40ip-polito-app-data.iam.gserviceaccount.com"
+}

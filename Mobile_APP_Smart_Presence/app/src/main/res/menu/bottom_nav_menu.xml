@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_introduction"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/fragment_name_introduction" />
+
+    <item
+        android:id="@+id/nav_presence_detection"
+        android:icon="@drawable/ic_baseline_co_present_24"
+        android:title="@string/fragment_name_presence_detection" />
+
+    <item
+        android:id="@+id/nav_setting"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/fragment_name_setting" />
+
+    <item
+        android:id="@+id/nav_chart"
+        android:icon="@drawable/ic_baseline_school_24"
+        android:title="@string/proFragmentName" />
+
+</menu>

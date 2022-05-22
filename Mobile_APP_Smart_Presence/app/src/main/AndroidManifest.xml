@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="it.polito.interdisciplinaryProjects2021.smartpresence">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/smart_presence"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/smart_presence"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartPresence">
+
+        <receiver android:name=".presenceDetection.positioningBased.GeofenceBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="ExportedReceiver" />
+
+        <activity
+            android:name=".presenceDetection.manualBased.CheckOutActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoDisplay" />
+        <activity
+            android:name=".presenceDetection.manualBased.CheckInActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoDisplay" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/smart_presence" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/purple_700" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".presenceDetection.wifiBased.MyPeriodicWifiCheckingWork"
+            android:enabled="true"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+
+        <service
+            android:name=".utility.MyFirebaseMessagingService"
+            android:exported="false"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:foregroundServiceType="location|dataSync"
+            tools:node="merge"
+            tools:ignore="Instantiatable" />
+
+        <service
+            android:name=".presenceDetection.positioningBased.MyPeriodicBackgroundPositioningCheckingWork"
+            android:enabled="true"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+
+        <receiver android:name=".utility.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true"/>
+
+    </application>
+
+</manifest>

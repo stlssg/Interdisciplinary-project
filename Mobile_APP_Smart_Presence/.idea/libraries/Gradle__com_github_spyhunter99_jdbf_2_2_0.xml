@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.spyhunter99:jdbf:2.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.spyhunter99/jdbf/2.2.0/b65555d76c67412e46579b2b9189aaf2c45116f0/jdbf-2.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.spyhunter99/jdbf/2.2.0/d3a9ad20a5e45186b3c853f883ebf1523d3af05a/jdbf-2.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.spyhunter99/jdbf/2.2.0/866712f9e11be3bb9a2d6b9ceb4caede15386c20/jdbf-2.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

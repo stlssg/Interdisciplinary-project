@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".introduction.FaqFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/faqRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" />
+
+</LinearLayout>
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--tools:context=".introduction.FaqFragment">-->
+
+<!--<ScrollView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:padding="5dp"-->
+<!--    tools:ignore="UselessParent">-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/backLinearLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:id="@+id/card1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            app:cardElevation="10dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="10dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="8"-->
+<!--                        android:text="@string/question_1"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textStyle="bold"/>-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/arrowBtn1"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@color/transparentColor"-->
+<!--                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        tools:ignore="ContentDescription" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/ans1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/answer_1"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:paddingTop="5dp"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:id="@+id/card2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            app:cardElevation="10dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="10dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="8"-->
+<!--                        android:text="@string/question_2"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textStyle="bold"/>-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/arrowBtn2"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@color/transparentColor"-->
+<!--                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        tools:ignore="ContentDescription" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/ans2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/answer_2"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:paddingTop="5dp"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:id="@+id/card3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            app:cardElevation="10dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="10dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="8"-->
+<!--                        android:text="@string/question_3"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textStyle="bold"/>-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/arrowBtn3"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@color/transparentColor"-->
+<!--                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        tools:ignore="ContentDescription" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/ans3"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/answer_3"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:paddingTop="5dp"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:id="@+id/card4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            app:cardElevation="10dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="10dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="8"-->
+<!--                        android:text="@string/question_4"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textStyle="bold"/>-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/arrowBtn4"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@color/transparentColor"-->
+<!--                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        tools:ignore="ContentDescription" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/ans4"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/answer_4"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:paddingTop="5dp"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:id="@+id/card5"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            app:cardElevation="10dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="10dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="8"-->
+<!--                        android:text="@string/question_5"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textStyle="bold"/>-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/arrowBtn5"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@color/transparentColor"-->
+<!--                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"-->
+<!--                        android:layout_gravity="center" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/ans5"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/answer_5"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:paddingTop="5dp"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:id="@+id/card6"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            app:cardElevation="10dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="10dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="8"-->
+<!--                        android:text="@string/question_6"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textStyle="bold"/>-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/arrowBtn6"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@color/transparentColor"-->
+<!--                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"-->
+<!--                        android:layout_gravity="center" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/ans6"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/answer_6"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:paddingTop="5dp"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:id="@+id/card7"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            app:cardElevation="10dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="10dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="8"-->
+<!--                        android:text="@string/question_7"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textStyle="bold"/>-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/arrowBtn7"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@color/transparentColor"-->
+<!--                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"-->
+<!--                        android:layout_gravity="center" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/ans7"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/answer_7"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:paddingTop="5dp"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:id="@+id/card8"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            app:cardElevation="10dp"-->
+<!--            android:layout_marginBottom="40dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="10dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_weight="8"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:text="@string/question_8"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:textStyle="bold"/>-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/arrowBtn8"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@color/transparentColor"-->
+<!--                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        tools:ignore="ContentDescription" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/ans8"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/answer_8"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:paddingTop="5dp"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+<!--    </LinearLayout>-->
+
+<!--</ScrollView>-->
+
+<!--</LinearLayout>-->

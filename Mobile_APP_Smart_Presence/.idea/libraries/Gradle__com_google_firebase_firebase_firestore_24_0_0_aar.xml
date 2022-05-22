@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-firestore:24.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9cf7a3ffe68661571579d0f497cb659d/transformed/jetified-firebase-firestore-24.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2424a6a16b0daef679b9dd5ec3224ea6/transformed/jetified-firebase-firestore-24.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1688ee1ca38a673ef0e9893603e5dab9/transformed/jetified-firebase-firestore-24.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/46881f15dfedf2f66b0ce60b415c98dc/transformed/jetified-firebase-firestore-24.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f7bb48acd8ba2c79590c64a5f2cdb4dd/transformed/jetified-firebase-firestore-24.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/31c6e79690c22dab632d8e75953b2ea1/transformed/jetified-firebase-firestore-24.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/57b0dda732a89ba29a1bdcc306814823/transformed/jetified-firebase-firestore-24.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/57b0dda732a89ba29a1bdcc306814823/transformed/jetified-firebase-firestore-24.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/57b0dda732a89ba29a1bdcc306814823/transformed/jetified-firebase-firestore-24.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-firestore/24.0.0/6ba202e50b0b454bfb2ac7be6aeb6aeaca2ce2b1/firebase-firestore-24.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-firestore/24.0.0/a92485f319e53f8061658fed133103cfd62fee48/firebase-firestore-24.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

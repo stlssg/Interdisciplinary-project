@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/startFragment">
+
+    <fragment
+        android:id="@+id/nav_introduction"
+        android:name="it.polito.interdisciplinaryProjects2021.smartpresence.introduction.IntroductionFragment"
+        android:label="@string/fragment_name_introduction"
+        tools:layout="@layout/fragment_introduction" >
+        <action
+            android:id="@+id/action_nav_introduction_to_infoBrandFragment"
+            app:destination="@id/infoBrandFragment" />
+        <action
+            android:id="@+id/action_nav_introduction_to_faqFragment"
+            app:destination="@id/faqFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_presence_detection"
+        android:name="it.polito.interdisciplinaryProjects2021.smartpresence.presenceDetection.PresenceDetectionFragment"
+        android:label="@string/fragment_detection_title"
+        tools:layout="@layout/fragment_presence_detection" >
+        <action
+            android:id="@+id/action_nav_presence_detection_to_wifiCheckingFragment"
+            app:destination="@id/wifiCheckingFragment" />
+        <action
+            android:id="@+id/action_nav_presence_detection_to_positioningCheckingFragment"
+            app:destination="@id/positioningCheckingFragment" />
+        <action
+            android:id="@+id/action_nav_presence_detection_to_manualCheckingFragment"
+            app:destination="@id/manualCheckingFragment" />
+        <action
+            android:id="@+id/action_nav_presence_detection_to_manualConfigurationFragment"
+            app:destination="@id/manualConfigurationFragment" />
+        <action
+            android:id="@+id/action_nav_presence_detection_to_positioningConfigurationFragment"
+            app:destination="@id/positioningConfigurationFragment" />
+        <action
+            android:id="@+id/action_nav_presence_detection_to_wifiConfigurationFragment"
+            app:destination="@id/wifiConfigurationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="it.polito.interdisciplinaryProjects2021.smartpresence.others.SettingFragment"
+        android:label="@string/fragment_name_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_nav_setting_to_resetPasswordFragment"
+            app:destination="@id/resetPasswordFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/wifiCheckingFragment"
+        android:name="it.polito.interdisciplinaryProjects2021.smartpresence.presenceDetection.wifiBased.WifiCheckingFragment"
+        android:label="@string/fragment_wifi_checking_name"
+        tools:layout="@layout/fragment_wifi_checking" >
+        <action
+            android:id="@+id/action_wifiCheckingFragment_to_wifiConfigurationFragment"
+            app:destination="@id/wifiConfigurationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="it.polito.interdisciplinaryProjects2021.smartpresence.others.SignInFragment"
+        android:label="SignInFragment"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_signInFragment_to_declarationFragment"
+            app:destination="@id/declarationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/declarationFragment"
+        android:name="it.polito.interdisciplinaryProjects2021.smartpresence.others.DeclarationFragment"
+        android:label="fragment_declaration"
+        tools:layout="@layout/fragment_declaration" >
+        <action
+            android:id="@+id/action_declarationFragment_to_nav_introduction"
+            app:destination="@id/nav_introduction" />
+    </fragment>
+    <fragment
+        android:id="@+id/manualCheckingFragment"
+        android:name="it.polito.interdisciplinaryProjects2021.smartpresence.presenceDetection.manualBased.ManualCheckingFragment"
+        android:label="@string/fragment_manual_checking_name"
+        tools:layout="@layout/fragment_manual_checking" >
+        <action
+            android:id="@+id/action_manualCheckingFragment_to_manualConfigurationFragment"
+            app:destination="@id/manualConfigurationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/positioningCheckingFragment"
+        android:name="it.polito.interdisciplinaryProjects2021.smartpresence.presenceDetection.positioningBased.PositioningCheckingFragment"
+        android:label="@string/fragment_positioning_checking_name"
+        tools:layout="@layout/fragment_positioning_checking" >
+        <action
+            android:id="@+id/action_positioningCheckingFragment_to_positioningConfigurationFragment"
+            app:destination="@id/positioningConfigurationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wifiConfigurationFragment"
+        android:name="it.polito.interdisciplinaryProjects2021.smartpresence.presenceDetection.wifiBased.WifiConfigurationFragment"
+        android:label="@string/fragment_configuration_name"
+        tools:layout="@layout/fragment_wifi_configuration" >
+        <action
+            android:id="@+id/action_configurationFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="it.polito.interdisciplinaryProjects2021.smartpresence.presenceDetection.MapFragment"
+        android:label="@string/map_fragment_name"
+        tools:layout="@layout/fragment_map"/>
+    <fragment
+        android:id="@+id/positioningConfigurationFragment"
+        android:name="it.polito.interdisciplinaryProjects2021.smartpresence.presenceDetection.positioningBased.PositioningConfigurationFragment"
+        android:label="@string/fragment_configuration_name"
+        tools:layout="@layout/fragment_positioning_configuration" >
+        <action
+            android:id="@+id/action_positioningConfigurationFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/manualConfigurationFragment"
+        android:name="it.polito.interdisciplinaryProjects2021.smartpresence.presenceDetection.manualBased.ManualConfigurationFragment"
+        android:label="@string/fragment_configuration_name"
+        tools:layout="@layout/fragment_manual_configuration" >
+        <action
+            android:id="@+id/action_manualConfigurationFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoBrandFragment"
+        android:name="it.polito.interdisciplinaryProjects2021.smartpresence.introduction.InfoBrandFragment"
+        android:label="@string/fragment_info_brand_name"
+        tools:layout="@layout/fragment_info_brand" >
+        <action
+            android:id="@+id/action_infoBrandFragment_to_sendEmailFragment"
+            app:destination="@id/sendEmailFragment"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="it.polito.interdisciplinaryProjects2021.smartpresence.others.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_splashBaseFragment"
+            app:destination="@id/splashBaseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_chart"
+        android:name="it.polito.interdisciplinaryProjects2021.smartpresence.professional.ProfessionalFragment"
+        android:label="@string/proFragmentTitle"
+        tools:layout="@layout/fragment_professional" >
+        <action
+            android:id="@+id/action_nav_chart_to_sendEmailFragment"
+            app:destination="@id/sendEmailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/faqFragment"
+        android:name="it.polito.interdisciplinaryProjects2021.smartpresence.introduction.FaqFragment"
+        android:label="@string/faqFragmentTitle"
+        tools:layout="@layout/fragment_faq" />
+    <fragment
+        android:id="@+id/splashBaseFragment"
+        android:name="it.polito.interdisciplinaryProjects2021.smartpresence.splashScreen.SplashBaseFragment"
+        android:label="fragment_splash_base"
+        tools:layout="@layout/fragment_splash_base" >
+        <action
+            android:id="@+id/action_splashBaseFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPasswordFragment"
+        android:name="it.polito.interdisciplinaryProjects2021.smartpresence.others.ResetPasswordFragment"
+        android:label="@string/reset_password_title"
+        tools:layout="@layout/fragment_reset_password" />
+    <fragment
+        android:id="@+id/sendEmailFragment"
+        android:name="it.polito.interdisciplinaryProjects2021.smartpresence.others.SendEmailFragment"
+        android:label="@string/send_email_frag_title"
+        tools:layout="@layout/fragment_send_email">
+        <argument
+            android:name="targetEmail"
+            app:argType="string" />
+    </fragment>
+</navigation>

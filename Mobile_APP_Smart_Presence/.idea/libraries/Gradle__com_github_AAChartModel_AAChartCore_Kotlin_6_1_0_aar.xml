@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.AAChartModel:AAChartCore-Kotlin:6.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/42c99911e0c6a244559bc57c702a35e2/transformed/jetified-AAChartCore-Kotlin-6.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/42c99911e0c6a244559bc57c702a35e2/transformed/jetified-AAChartCore-Kotlin-6.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/42c99911e0c6a244559bc57c702a35e2/transformed/jetified-AAChartCore-Kotlin-6.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.AAChartModel/AAChartCore-Kotlin/6.1.0/d96836ceb9ba95ae0d307a1ddcdb9799f72b3ca3/AAChartCore-Kotlin-6.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

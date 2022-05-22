@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smart Presence</string>
+    <string name="fragment_name_introduction">介绍</string>
+    <string name="fragment_name_presence_detection">检测</string>
+    <string name="fragment_name_setting">设置</string>
+    <string name="signInWelcome">欢迎使用</string>
+    <string name="signOutButton">登出</string>
+    <string name="plzSign">请签署协议！</string>
+    <string name="declaration_title"><![CDATA[隐私声明，澄清，协议:]]></string>
+    <string name="declaration_content">
+        请认真阅读以下关于Smart Presence的隐私声明。\n
+        Smart presence会手机你的个人资料，包括位置，WiFi连接，邮箱，地址，等。该应用会调用你的为地址或WiFi信息来检测你是否在目标建筑， 也会需要你的个人信息从而配置firebase cloud firestore数据库，
+    其会存储你的所有数据。因为Smart presence着眼于居住环境，故你的住址也是需要的。\n
+        我们保证你的星系不会暴漏也不会被其他人得到。最重要的是，你的信息不会用于商业行为，我们也将保证数据库的安全，故你的个人信息可悲保护。另外，你有权要求我们删除你的账号和所有数据，若如此，你的数据备份也会消失。\n
+        签署该协议就意味着你授予了后台定位权限，停止了该应用的电池优化，并为了应对不同厂家的设备也改变了可能的设置。你同意提供关于位置，地址和邮箱的信息。你已经阅读并清楚以上所有内容。</string>
+    <string name="finishSignIn">完成</string>
+    <string name="checkbox">同意</string>
+    <string name="locationPermission">定位权限页面</string>
+    <string name="stopBatteryOptimization">停止电池优化</string>
+    <string name="manuallySettings"><![CDATA[如果你还没有改变设置。请手动更改: 授予后台定位权限 & 停止电池优化。]]></string>
+    <string name="setting_account">账号</string>
+    <string name="deleteDataButton">删除数据</string>
+    <string name="settingTimeOptions">时间选项</string>
+    <string name="setting_working_time_interval">工作间隔 (分):</string>
+    <string name="setting_working_time_interval_description">连续两个检测之间的时长，如果你的离家时间常常为较长时间，你也可以选择较长的市场来节省电池。</string>
+    <string name="setting_start_time">开始时间:</string>
+    <string name="setting_stop_time">结束时间:</string>
+    <string name="settingStartStopTimeDescription">你可以选择检测何时开始或停止，请注意结束时间应在开始时间之后。</string>
+    <string-array name="working_interval">
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+    </string-array>
+    <string name="deleteDataMessage">您已成功删除储存在云端的数据!</string>
+    <string name="setting_daily_notification">每日通知</string>
+    <string name="setting_daily_notification_description">持续收取每日通知</string>
+    <string name="notificationOnMessage">你会在每天下午两点收到推送!</string>
+    <string name="notificationOffMessage">你将不会再收到每日通知!</string>
+    <string name="setting_language">语言</string>
+    <string-array name="language">
+        <item>英语</item>
+        <item>意大利语</item>
+        <item>中文</item>
+    </string-array>
+    <string name="setting_alert_title">删除确认</string>
+    <string name="setting_alert_content">您确定要删除所有存在云端的数据吗?</string>
+    <string name="setting_alert_cancel">取消</string>
+    <string name="setting_alert_confirm">是</string>
+    <string name="configuration_menu">配置</string>
+    <string name="fragment_wifi_checking_name">WiFi查阅</string>
+    <string name="fragment_positioning_checking_name">定位查阅</string>
+    <string name="fragment_manual_checking_name">手动查阅</string>
+    <string name="fragment_configuration_name">配置</string>
+    <string name="ssid_input">SSID (WiFi名)</string>
+    <string name="bssid_input">BSSID (独有身份)</string>
+    <string name="update_wifi_info_button">更新WIFI信息</string>
+    <string name="update_wifi_info_description">如果当前信息不正确或你不知道需要输入什么，请点击按钮以显示当前WiFi连接的信息，否则请手动输入。</string>
+    <string name="address_input">目标建筑地址</string>
+    <string name="update_address_button">从地图中选取</string>
+    <string name="update_address_description">点击按钮以从地图中选取目标建筑。无论如何，请确保你的输入和其他在目标建筑的人的输入相同。</string>
+    <string name="max_occupancy_input">最大理论占有数</string>
+    <string name="max_occupancy_description">处于目标建筑中的最大人数。</string>
+    <string name="save_menu">保存</string>
+    <string name="configuration_confirm_title">请确认你的配置。</string>
+    <string name="configuration_alert_confirm_button">是，确认</string>
+    <string name="configuration_alert_toast">你已成功配置档案。</string>
+    <string name="no_wifi_connection_message">请确保您已连接WiFi否则请手动输入。</string>
+    <string name="configuration_empty_input_message">请不要留下空白。</string>
+    <string name="save_location_button">保存</string>
+    <string name="map_fragment_name">地图</string>
+    <string name="turn_on_location_message">请打开定位服务。</string>
+    <string name="map_error_message">请重启WiFi连接和定位服务。</string>
+    <string name="success_location_save">您已成功选择位置。</string>
+    <string name="latitude">纬度</string>
+    <string name="longitude">。经度</string>
+    <string name="energySavingModeOnOff">电池节省模式</string>
+    <string name="energySavingModeAlertTitle">能量节省模式</string>
+    <string name="energySavingModeOnMessage">开启电池节省模式，你将依赖于所谓的地理栅栏来进行检测，该功能并不精确，因为其需要来自其他应用的位置更新！</string>
+    <string name="energySavingModeOffMessage">关闭电池节省模式，检测的精度将提升，但你可能会有快速的电量下降！</string>
+    <string name="energySavingModeAlertButton">明白</string>
+    <string name="energySavingModeAlertNoButton">不改变</string>
+    <string name="alreadyStopBatteryOptimization">您已经关闭该应用的电池优化。</string>
+    <string name="alreadyGrantAllTimePositioningPermission">您已经为该应用授予定位权限。</string>
+    <string name="introduction_text_main">
+        欢迎使用Smart Presence，此应用的目标是侦测你是都在目标建筑中并得到建筑占有概述，以此帮助智能建筑管理。总的来说，我们提供了三种方法以供选择：基于WiFi的方法，基于定位的方法和手动方法。\n \n
+        基于WiFi的方法：应用会周期性地对比当前WiFi连接和用户配置的目标的SSID（WiFi名称）和BSSID (由路由器分配的独特代号)，如果他们相符合，你会被认定为”在“。因此，应用可得到你进入或离开目标建筑的周期。\n \n
+        基于定位的方法： 原理是如果你在目标建筑周围一定范围内则你会被认为”在“。具体来说，应用可以周期性地更新你的位置（经纬度）来检测或者被动接收其他应用的定位请求来触发地理栅栏，前者消耗更多电池而后者相反。\n \n
+        手动方法：每当你进入或离开目标建筑，你只用简单的点击应用所提供的捷径来记录即可。这完全依赖你的习惯。\n \n
+        我们强烈建议在开始服务之前，请前往设置页面，并处理你的账户，改变检测间隔，改变一天中的工作周期，决定是否接收每日通知或更改语言。\n \n
+        最后，应用会在后台自动运行，你的数据将会被上传并存储于firestore数据库以供进一步分析。
+    </string>
+    <string name="startButton">开始</string>
+    <string name="reStartButton">重启</string>
+    <string name="stopButton">停止</string>
+    <string name="showInfoButton">显示工作状态</string>
+    <string name="introduction_more">如果你还未授予后台定位权限和停止电池优化，请手动进行。</string>
+    <string name="introduction_plus">另外，对于某些厂家的设备，你可能需要手动更改某些设定。请参照此处。</string>
+    <string name="fragment_info_brand_name">不同设备的信息</string>
+    <string name="huawei_description">华为：即使你已经为该应用停止了电池优化，你还是需要在你的系统设置界面再做一次。此外，对于旧版本的设备，其自定义的安卓系统的内在的性质严重限制了后台服务，故应用无法完
+    美工作，因此请开启每日提醒并每天重启服务或早上起床时重启。但是，对于新版本，由于谷歌的限制，Google Play服务不再支持华为，故基于定位的方法不能工作。</string>
+    <string name="samsung_description">三星：其确实有关于后台服务的限制，故请打开每日通知。另一方面，你还需要授予后台服务权限。</string>
+    <string name="onePlus_description">一加：你必须手动关闭电池优化，对于一加，其不能在应用中完成。</string>
+    <string name="meizu_description">魅族：你需要前往设定界面找到隐私和安全，在其中你可以为该应用启用后台运行。</string>
+    <string name="more_info_devices">获取更多信息，请联系s287288@studenti.polito.it. </string>
+    <string name="wifi_guidance">
+        为了利用WiFi连接来进行检测，你需要遵循一下几步：\n \n
+        1. 点击右上角的三个点前往配置页面。\n \n
+        2. 在配置页面，你可以自动或手动（若此，请确保你的输入是正确的！！！）生成SSID和BSSID。你也需要手动输入或从地图中选取地址。最后，你需要决定目标建筑的最大占有数。\n \n
+        3. 点击右上角的三点保存配置并返回该页面。\n \n
+        4. 点击”开始“开启服务，之后服务会根据你的设定自动在后台运行。\n \n
+        5. 点击”停止“结束服务。”开始“按钮在被点击之后会变成”重启“，故你可以随时重启服务。\n \n
+        6. 另外，你可点击”显示工作状态“来查看当前服务情况（排队：服务正在队列中等待下一次检测；运行：服务正在运行检测；取消：服务已被你取消；无：你还未定义任何服务）。
+    </string>
+    <string name="startServiceMessage">您已成功开启服务!</string>
+    <string name="stopServiceMessage">您已成功停止服务!</string>
+    <string name="restartServiceMessage">您已成功重启服务!</string>
+    <string name="workStatus">服务的当前状态:</string>
+    <string name="wifi_based_method_name">基于WiFi的方法</string>
+    <string name="positioning_based_method_name">基于定位的方法</string>
+    <string name="manual_method_name">手动方法</string>
+    <string name="positioning_guidance">
+        为了利用谷歌定位服务来进行检测，你需要遵循一下几步： \n \n
+        1. 点击右上角的三个点前往配置页面。\n \n
+        2. 在配置页面，你需要目标建筑的地址和位置（经纬度），他们可被手动输入（若此，请确保你的输入是正确的）或从地图中选择。此外，你需要决定目标建筑的最大占有数。最后，你也可以决定是否开启电池节省模式。
+        如果你选择默认的无电池节省模式，应用将会通过自身周期性地更新位置，这会消耗更多电量。另一方面，如果你选择电池节省模式，你不会有明显的电量下降，但是精确都不好，因为此情况西应用会利用所谓的地理栅栏，其
+        完全依赖于其他应用的位置请求。我们建议只有当你经常使用有定位服务的应用时选择电池节省模式，例，谷歌地图。\n \n
+        3. 点击右上角的三点保存配置并返回该页面。\n \n
+        4. 点击”开始“开启服务，之后服务会根据你的设定自动在后台运行。\n \n
+        5. 点击”停止“结束服务。”开始“按钮在被点击之后会变成”重启“，故你可以随时重启服务。\n \n
+        6. 另外，你可点击”显示工作状态“来查看当前服务情况（排队：服务正在队列中等待下一次检测；运行：服务正在运行检测；取消：服务已被你取消；无：你还未定义任何服务或地理栅栏已停止）。
+    </string>
+    <string name="manual_guidance">
+        此方法完全以来与你每当进入或离开目标建筑时都点击按钮的习惯，这对于日常生活来说很难，故只有当你确信你能记住或不想位置或WiFi连接暴漏时选择此方法。\n \n
+        为了利用手动记录进入离开进行检测，你需要遵循一下几步： \n \n
+        1. 点击右上角的三个点前往配置页面。\n \n
+        2. 在配置页面，你需要目标建筑的地址和位置（经纬度），他们可被手动输入（若此，请确保你的输入是正确的）或从地图中选择。最后，你需要决定目标建筑的最大占有数。\n \n
+        3. 点击右上角的三点保存配置并返回该页面。\n \n
+        4. 每当你进入目标建筑时点击”登记进入“记录，数据之后会被上传。\n \n
+        5. 每当你离开目标建筑时点击”登记离开“记录，数据之后会被上传。\n \n
+        注意：我们为这两个按键提供了捷径，你可以长按应用图标并拉出捷径放置在方便之处，这样，你不用每次都前往此页面进行登记。
+    </string>
+    <string name="checkInButton">登记进入</string>
+    <string name="checkOutButton">登记离开</string>
+    <string name="checkInMessage">进入已被成功记录!</string>
+    <string name="checkOutMessage">离开已被成功记录!</string>
+    <string name="start_fragment_title">Smart Presence</string>
+    <string name="start_fragment_content">智能家居</string>
+    <string name="pairDeclaration1">授予后台定位权限</string>
+    <string name="pairDeclaration2">停止电池优化</string>
+    <string name="pairIntroduction1">后台定位权限</string>
+    <string name="pairIntroduction2">停止电池优化</string>
+    <string name="pairIntroduction3">此处</string>
+    <string name="notInMyPositionMessage">如果地图未已你的当前位置为中心，请打开谷歌地图并重启应用。</string>
+    <string name="configurationNotFinishedMessage">请点击右上角的三点按钮并确认您已完成配置。</string>
+    <string name="workStatusString_ENQUEUED">排队</string>
+    <string name="workStatusString_RUNNING">运行</string>
+    <string name="workStatusString_CANCELLED">取消</string>
+    <string name="workStatusString_NOTHING">无</string>
+    <string name="onMapMarkerClickMessage">地址是: </string>
+    <string name="geocoderNotWorkingMessage">您的设备没有安装GeoCoder服务，请手动输入地址。</string>
+    <string name="configurationAlertAddressName">地址</string>
+    <string name="configurationAlertMaxName">最大占有数</string>
+    <string name="configurationAlertLatName">纬度</string>
+    <string name="configurationAlertLonName">经度</string>
+    <string name="notificationTitle">请重启服务。</string>
+    <string name="notificationContent">保证长期工作。</string>
+    <string name="subscribeNotSuccess">推送通知因未知原因被停止，请稍后重启再试。</string>
+    <string name="LOGINPAGE_log_in_title">登录</string>
+    <string name="LOGINPAGE_sign_up_title">注册</string>
+    <string name="email_as_user_name">邮箱作为用户名</string>
+    <string name="password">密码</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="LOGINPAGE_or">或</string>
+    <string name="LOGINPAGE_log_in_and_sign_up_title">注册 &amp; 登录</string>
+    <string name="logInUnsuccess">目前无法登录，请稍后再试。</string>
+    <string name="logInSuccess">您已成功登录。</string>
+    <string name="logInAndRegisteredSuccess">您已成功注册并登录。</string>
+    <string name="notEmailMessage">用户名应是邮箱。</string>
+    <string name="userExist">邮箱已被使用，请选择另外一个。</string>
+    <string name="passwordSettingNotSame">密码不一样。</string>
+    <string name="noSuchUser">该用户不存在。</string>
+    <string name="passwordNotCorrect">你输入的密码不正确。</string>
+    <string name="shortcutCheckInTitle">进入</string>
+    <string name="shortcutCheckOutTitle">离开</string>
+    <string name="shortcutCheckInLongTitle">登记进入行为</string>
+    <string name="shortcutCheckOutLongTitle">登记离开行为</string>
+    <string name="shortcutCheckInMessage">您的进入已被记录。</string>
+    <string name="shortcutCheckOutMessage">您的离开已被记录。</string>
+    <string name="shortcutNoConfiguration">请在记录进入或离开前完成配置。</string>
+    <string name="fieldRequiredMessage">该区域是必须的。</string>
+    <string name="fragment_name_graph">图表</string>
+    <string name="logInAsProfessionalTitle">以专业人士(?)身份登录。</string>
+    <string name="whatIsProfessionalTitle">什么是专业人士?</string>
+    <string name="whatIsProfessionalMessage">作为专业人士，你可以在图标中查看占有率并进行可能的行为。</string>
+    <string name="fragment_detection_title">智能检测</string>
+    <string name="restartAppMessage">请重启应用!</string>
+    <string name="graphDailyTitle">日占有率</string>
+    <string name="graphDailySubtitle">一天中每个小时的平均值</string>
+    <string name="graphYTitle">百分比[%]</string>
+    <string name="graphOptionDaily">日</string>
+    <string name="graphOptionWeekly">周</string>
+    <string name="graphOptionMonthly">月</string>
+    <string name="graphOptionYearly">年</string>
+    <string name="graphOptionTotal">总</string>
+    <string name="graphNoDataMessage">目前该选项无数据可用。</string>
+    <string name="graphErrorMessage">对不起，应用在显示图表时出现问题，可能由连接或其他原因造成。请稍后再试。</string>
+    <string name="settingFrequentNotificationDescription">更加频繁的通知</string>
+    <string name="frequentNotificationOnMessage">除去正常的通知，你还会收到更加频繁的每日推送，一次在7:00，一次在18:00。</string>
+    <string name="frequentNotificationOffMessage">你将不再收到更加频繁的通知。</string>
+    <string name="settingNotificationContent">我们强烈建议你打开每日通知，这样如果后台服务停止了，你可以重启它。我们会检测你手机的行为并让你知道何时需要打开更频繁的通知。</string>
+    <string name="frequentNotificationRemindTitle">请打开频繁通知</string>
+    <string name="frequentNotificationRemindMessage">我们检测到对于您的设备，后台服务的状况并不好。我们强烈建议你打开频繁通知，这样可以多次提醒您重启服务。谢谢。</string>
+    <string name="frequentNotificationRemindPositiveButton">前往设置</string>
+    <string name="firstInstallRemindTitle">首次安装提醒</string>
+    <string name="firstInstallRemindMessage">亲爱的用户，该应用非常依赖后台服务，其可能需要某些特别的设置，这些设置无法被应用本身更改，只可被你手动更改，故请确保你已经为该应用授予了权限或更改了
+    设置以允许运行后台服务！！！另外，你也需要启动WiFi和定位服务！！！感谢您的配合。</string>
+    <string name="radius_spinner">决定存在的半径(米)</string>
+    <string name="radius_spinner_description">该半径会定义一个范围，在其内你会被认为存在。其数值越大，消耗能量越少。</string>
+    <string-array name="radius_list">
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>400</item>
+    </string-array>
+    <string name="professionalAccountSettingDescription">您有权要求删除储存云端的数据。你还可以转成普通模式。</string>
+    <string name="regularAccountSettingDescription">您有权要求删除储存云端的数据。你还可以转成专业模式。</string>
+    <string name="professionalAccountModeName">普通模式</string>
+    <string name="regularAccountModeName">专业模式</string>
+    <string name="modeSwitchTitle">转换模式</string>
+    <string name="modeSwitchButton">是的，转换</string>
+    <string name="modeSwitchMessage_regularAccount">通过转成专业模式，你可以可视化你的建筑占有率并进行可能的行为。</string>
+    <string name="modeSwitchMessage_professionalAccount">通过转换成普通模式，你会回到只有基本更能的布局。</string>
+    <string name="proActionTabName">信息</string>
+    <string name="proFragmentName">专业</string>
+    <string name="proFragmentTitle">专业行为</string>
+    <string name="wifiOrLocationServiceOffAlertTitle">关键服务关闭</string>
+    <string name="wifiOffLocationOffAlertMessage">我们注意到WiFi和定位服务已经被关闭，他们对应用至关重要，请务必打开。</string>
+    <string name="wifiOnLocationOffAlertMessage">我们注意到定位服务已经被关闭，其对应用至关重要，请务必打开。</string>
+    <string name="wifiOffLocationOnAlertMessage">我们注意到WiFi服务已经被关闭，其对应用至关重要，请务必打开。</string>
+    <string name="faqFragmentTitle">问题&amp;答案</string>
+    <string-array name="question_list">
+        <item>我应该用哪种方法来探测是否存在?</item>
+        <item>为什么我必须禁用电池优化?</item>
+        <item>为什么我必须授予所有时间定位权限?</item>
+        <item>我应该更改哪些设备设置?</item>
+        <item>为什么应用程序无法正常运行?</item>
+        <item>我应该选择哪种模式，常规模式还是专业模式？</item>
+        <item>对于WiFi检查方法，什么是SSID和BSSID?</item>
+        <item>我应该参考什么样的时间设置？</item>
+        <item>如何获得专业访问权限？</item>
+        <item>为什么我不能使用地图选择地址？</item>
+    </string-array>
+    <string-array name="answer_list">
+        <item>我们一共提供了三种方法。 一般来说，WiFi方法是最推荐的一种，因为它简单可靠。但是，如果您的目标建筑物中没有安装WiFi设备，或者您只是不想使用WiFi，则定位方法是一种更通用
+    的方法，它只需要智能手机的定位服务，但不如上一个可靠，且可能会消耗更多电池。 最后，还有手动方法，但是您需要手动点击签入/签出按钮，这完全取决于您的习惯。 它的优点是非常可靠和准确。</item>
+        <item>本应用的核心功能会长期利用安卓后台工作的特性，其可能会受到影响且由于电池优化而停止。为了保证服务的连续性以获得可靠的占用情况，必须这样做。</item>
+        <item>首先，服务会在后台运行很长时间，这只能通过所有时间的许可来完成。 其次，无论是WiFi方式还是定位方法都需要打开位置服务才能访问某些信息。</item>
+        <item>这完全取决于您使用的特定设备，因为不同的制造商拥有自己定制的安卓系统，它们以不同的方式限制后台服务。 一般来说，
+    您最需要更改的常见设置是：所有时间定位权限、电池优化、后台服务允许。</item>
+        <item>有几种情况：权限未授予；后台服务是受限制的；WiFi服务已关闭；位置服务已关闭；你很少使用手机。</item>
+        <item>在大多数情况下，建议选择常规模式，因为它是轻量级的且简单。 如果您是专家或相关人员，专业模
+    式可以帮助您执行更多远程操作。 但是，这完全取决于您，专业模式不会产生更多花费。</item>
+        <item>SSID就是所谓的服务集标识符，简单来说就是WiFi名称而BSSID是基本服务集标识符，是路由器分配的48位标签。他们两者都用于识别目标建筑物中的路由器。</item>
+        <item>通常，建议遵循默认值，因为它们具有更高的准确性，并且可以涵盖一天中最有意义的时间段。但是，您可以根据你自己的行为选择自定义。
+    例如，如果您总是在夜间在外面工作，您需要将停止时间更改为延迟时间实例。</item>
+        <item>您需要是一个使用我们桌面软件的专家，您可以在其中得到代码以获得许可。</item>
+        <item>有多种原因：您的定位服务已关闭或失败，您的设备没有支持所谓的地理编码功能，你的设备不支持谷歌服务，你的互联网
+         连接已关闭。无论如何，如果您无法访问地址和位置，您可以随时手动输入它们。但是，您需要确保地址与其他住户完全相同，并且
+         包括纬度和经度在内的位置必须正确和精确。</item>
+    </string-array>
+    <string name="question_1">我应该用哪种方法来探测是否存在?</string>
+    <string name="answer_1">我们一共提供了三种方法。 一般来说，WiFi方法是最推荐的一种，因为它简单可靠。但是，如果您的目标建筑物中没有安装WiFi设备，或者您只是不想使用WiFi，则定位方法是一种更通用
+    的方法，它只需要智能手机的定位服务，但不如上一个可靠，且可能会消耗更多电池。 最后，还有手动方法，但是您需要手动点击签入/签出按钮，这完全取决于您的习惯。 它的优点是非常可靠和准确。</string>
+    <string name="question_2">为什么我必须禁用电池优化?</string>
+    <string name="answer_2">本应用的核心功能会长期利用安卓后台工作的特性，其可能会受到影响且由于电池优化而停止。为了保证服务的连续性以获得可靠的占用情况，必须这样做。</string>
+    <string name="question_3">为什么我必须授予所有时间定位权限?</string>
+    <string name="answer_3">首先，服务会在后台运行很长时间，这只能通过所有时间的许可来完成。 其次，无论是WiFi方式还是定位方法都需要打开位置服务才能访问某些信息。</string>
+    <string name="question_4">我应该更改哪些设备设置?</string>
+    <string name="answer_4">这完全取决于您使用的特定设备，因为不同的制造商拥有自己定制的安卓系统，它们以不同的方式限制后台服务。 一般来说，
+    您最需要更改的常见设置是：所有时间定位权限、电池优化、后台服务允许。</string>
+    <string name="question_5">为什么应用程序无法正常运行?</string>
+    <string name="answer_5">有几种情况：权限未授予；后台服务是受限制的；WiFi服务已关闭；位置服务已关闭；你很少使用手机。</string>
+    <string name="question_6">我应该选择哪种模式，常规模式还是专业模式？</string>
+    <string name="answer_6">在大多数情况下，建议选择常规模式，因为它是轻量级的且简单。 如果您是专家或相关人员，专业模
+    式可以帮助您执行更多远程操作。 但是，这完全取决于您，专业模式不会产生更多花费。</string>
+    <string name="question_7">对于WiFi检查方法，什么是SSID和BSSID?</string>
+    <string name="answer_7">SSID就是所谓的服务集标识符，简单来说就是WiFi名称而BSSID是基本服务集标识符，是路由器分配的48位标签。他们两者都用于识别目标建筑物中的路由器。</string>
+    <string name="question_8">我应该参考什么样的时间设置？</string>
+    <string name="answer_8">通常，建议遵循默认值，因为它们具有更高的准确性，并且可以涵盖一天中最有意义的时间段。但是，您可以根据你自己的行为选择自定义。
+    例如，如果您总是在夜间在外面工作，您需要将停止时间更改为延迟时间实例。</string>
+    <string name="geofenceWorkingStatus">地理围栏正在工作</string>
+    <string name="geofenceNotWorkingStatus">地理围栏不工作</string>
+    <string name="blurViewText">请在更改任何配置之前停止正在运行的服务！</string>
+    <string name="splash1Title">存在到占有率</string>
+    <string name="splash1Content">通过检测您在目标建筑中的存在，可以得到占用率以支持您的智能建筑管理。</string>
+    <string name="splash2Title">三种方法</string>
+    <string name="splash2Content">该应用程序总共提供三种方法，您可以为了自己的方便从中选择。</string>
+    <string name="splash3Title">为专家提供更多</string>
+    <string name="splash3Content">如果您是从事智能建筑、数据分析或相关领域的专业人士，您有更多功能，如可视化等。</string>
+    <string name="splashButtonSkip">跳过</string>
+    <string name="splashButtonStart">开始使用</string>
+    <string name="wifi_based_method_guidance_title">基于WiFi的方法指导:</string>
+    <string name="positioning_based_method_guidance_title">基于定位的方法指导:</string>
+    <string name="manual_method_guidance_title">手动方法指导:</string>
+    <string name="presence_detection_page_content_title">存在检测方法</string>
+    <string name="presence_detection_page_content_subtitle">长按选择/取消方法，短按查看其指导</string>
+    <string name="pro_action_description_at_end">更多功能即将推出。</string>
+    <string name="pro_action_info_information_title">目标建筑信息：</string>
+    <string name="pro_action_info_statistics_title">统计数据:</string>
+    <string name="pro_action_info_current_number">目标建筑中的当前居住人数</string>
+    <string name="pro_action_info_avg_selected">平均每小时占有人数（已选区间）:</string>
+    <string name="pro_action_info_avg_all">平均每小时占有人数（全天）:</string>
+    <string name="pro_action_info_not_available">无法获取</string>
+    <string name="pro_action_info_max_string">最大</string>
+    <string name="wifi_based_card_description">定期检查您的 WiFi 连接并根据配置确定您的存在定期检查您的WiFi连接并根据配置确定您的存在</string>
+    <string name="positioning_based_card_description">定期检查您的位置并与您当前的位置进行比较，或使用地理围栏</string>
+    <string name="manual_based_card_description">每当您进入或离开目标建筑物时，手动单击按钮以签入或签出</string>
+    <string name="simple_show_status">状态</string>
+    <string name="already_selected_method_message">您必须在更改方法之前取消选择所选的</string>
+    <string name="no_selection_go_conf_message">您需要在配置设置之前选择一种方法</string>
+    <string name="no_selection_manual_click_button">您需要选择手动方法来利用签入或签出功能</string>
+    <string name="no_selection_click_start">您需要选择基于WiFi或基于定位的方法来启动后台服务</string>
+    <string name="long_click_card_no_stop_service">要取消选择该方法，您必须停止服务</string>
+    <string name="show_status_for_manual_method">您选择了手动方法，它没有状态</string>
+    <string name="show_status_for_no_selection">您还没有选择任何方法，现在没有状态</string>
+    <string name="graph_no_data_message">没有可用的数据</string>
+    <string name="building_list_title">目标建筑列表</string>
+    <string name="grant_access_title">授予专业访问权限</string>
+    <string name="code_title">访问密码</string>
+    <string name="code_check_title">校验</string>
+    <string name="access_grant_description">输入从桌面软件得到到的密码，然后单击验证按钮以访问更多内容。</string>
+    <string name="no_building_for_list_message">没有可用的建筑</string>
+    <string name="select_address_message">您已成功选择目标建筑</string>
+    <string name="not_grant_pro_access_message">您还没有访问权限</string>
+    <string name="wrong_code_message">您输入的代码错误</string>
+    <string name="right_code_message">代码正确，现在您可以访问所有建筑的信息</string>
+    <string name="long_click_check_message">长按按钮可在特定时间签入/签出。</string>
+    <string name="specific_check_title">在特定时间签入/签出</string>
+    <string name="date_string">日期</string>
+    <string name="time_string">时间</string>
+    <string name="no_target_building_message">您尚未指定目标建筑.</string>
+    <string name="target_msg_card">这是您自己的目标建筑。</string>
+    <string name="email_sent_msg">包含您的密码的消息已发送到您的电子邮件地址。</string>
+    <string name="pair_delete">删除</string>
+    <string name="reset_password_title">重设密码</string>
+    <string name="reset_password_gmail_msg">您现在使用gmail进行谷歌登录，在这种情况下您无法更改密码。</string>
+    <string name="old_p_str">旧密码</string>
+    <string name="new_p_str">新密码</string>
+    <string name="repeat_p_str">重复新密码</string>
+    <string name="confirm_p_str">确认</string>
+    <string name="reset_p_not_same">新密码不一样</string>
+    <string name="new_p_used">新密码已被使用。</string>
+    <string name="successfully_reset_p">您已成功更改了密码。</string>
+    <string name="send_email_frag_title">发送电子邮件</string>
+    <string name="send_email_address_title">地址：</string>
+    <string name="send_email_subject_title">主题：</string>
+    <string name="send_email_content_title">内容：</string>
+    <string name="send_email_btn">发送</string>
+    <string name="upload_alert_btn">上传</string>
+    <string name="upload_success_msg">您已成功上传配置，其他住户可以使用共享代码下载该配置。</string>
+    <string name="upload_alert_content">作为建筑物管理员，您可以通过以下共享代码上传配置以与其他居住者共享以方便他们：</string>
+    <string name="upload_alert_title">上传配置并生成共享代码。</string>
+    <string name="already_upload_msg">您已经上传了配置，代码是：</string>
+    <string name="download_conf_title">下载配置</string>
+    <string name="shared_code_title">共享代码</string>
+    <string name="shared_code_description">您可以联系目标楼宇的楼宇管理员或相关人员获取共享代码并下载通用配置以启动服务。</string>
+    <string name="no_match_shared_code_msg">没有匹配或您的代码错误。</string>
+    <string name="finish_download_conf_msg">您已成功下载配置，您可以立即启动服务或签入/签出。</string>
+    <string name="graphWeeklyTitle">周占有率</string>
+    <string name="graphWeeklySubtitle">整周每小时的平均值</string>
+    <string-array name="monthList">
+        <item>一月</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>十一月</item>
+        <item>十二月</item>
+    </string-array>
+    <string name="setting_sensitivity_title">休眠状态灵敏度</string>
+    <string name="high_s">高灵敏度</string>
+    <string name="low_s">低灵敏度</string>
+    <string name="setting_sensitivity_description">无论是休眠状态还是外出，都很难区分持续时间约为 1 小时。 如果您外出仅 1 小时左右的频率远低于您的设备处于睡眠模式的频率，请参考高灵敏度。这对于确定您的占有率非常重要。</string>
+    <string name="no_occupants_for_list_msg">没有信息可用</string>
+    <string name="service_status_title">服务状态：</string>
+    <string name="last_detection_title">最后检测：</string>
+    <string name="timestamp_title">时间戳：</string>
+    <string name="presence_condition_title">存在状态：</string>
+    <string name="time_option_title">时间选项：</string>
+    <string name="start_time_title">每天开始时间：</string>
+    <string name="stop_time_title">每天停止时间：</string>
+    <string name="work_interval_title">服务工作间隔：</string>
+    <string name="discarded_num_title">丢弃的周期数：</string>
+    <string name="most_recommended">*最推荐</string>
+    <string name="start_popUp_title">设置提醒</string>
+    <string name="start_popUp_msg">请确保您已禁用或更改所有可能阻止后台服务的设置，如电池优化、后台服务许可等！！！ 请确保您已开启 WiFi 服务和定位服务！！！</string>
+    <string name="address_remind_title">地址输入提醒</string>
+    <string name="address_remind_msg">如果您选择的地址不正确，可能是由于您设备中的地理编码器无法正常工作。 您可以随时选择手动输入，但要确保与其他住户完全一样！！！</string>
+    <string name="local_notification_title">本地每日通知</string>
+    <string name="local_notification_description">由于并非所有设备都支持Firebase推送通知，因此我们还介绍了本地通知。 如果您同时收到重复通知，您可以将其关闭，因为您的设备可以很好地使用云消息。</string>
+    <string name="no_google_service_msg">您的设备不支持谷歌服务，请不要使用地图或定位方式，而是手动输入。</string>
+    <string name="from_local_notification_title">本地重复通知提醒</string>
+    <string name="from_local_notification_content">您可能会收到此重复通知，因为您的设备可能无法很好地使用Firebase云消息。 如果您能够收到云消息，您可以进入设置禁用本地消息以避免重复通知。</string>
+</resources>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presenceDetection.wifiBased.WifiConfigurationFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ssid_input"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:errorEnabled="true"
+                android:hint="@string/ssid_input"
+                app:endIconMode="clear_text"
+                app:startIconContentDescription="temp"
+                app:startIconDrawable="@drawable/ic_baseline_wifi_24"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--            <TextView-->
+<!--                android:id="@+id/ssid_required"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="start"-->
+<!--                android:text="@string/fieldRequiredMessage"-->
+<!--                android:textColor="@color/pinkColor"-->
+<!--                android:textSize="10sp"-->
+<!--                tools:ignore="SmallSp" />-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/bssid_input"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="@string/bssid_input"
+                app:endIconMode="clear_text"
+                app:startIconContentDescription="temp"
+                app:startIconDrawable="@drawable/ic_baseline_router_24"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textUri"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--            <TextView-->
+<!--                android:id="@+id/bssid_required"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="start"-->
+<!--                android:text="@string/fieldRequiredMessage"-->
+<!--                android:textColor="@color/pinkColor"-->
+<!--                android:textSize="10sp"-->
+<!--                tools:ignore="SmallSp" />-->
+
+            <Button
+                android:id="@+id/update_wifi_info_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="@color/browser_actions_bg_grey"
+                android:text="@string/update_wifi_info_button"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:text="@string/update_wifi_info_description"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/address_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/address_input"
+                app:endIconMode="clear_text"
+                app:startIconContentDescription="temp"
+                app:startIconDrawable="@drawable/ic_baseline_edit_location_24"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    tools:ignore="SmallSp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--            <TextView-->
+<!--                android:id="@+id/address_required"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="start"-->
+<!--                android:text="@string/fieldRequiredMessage"-->
+<!--                android:textColor="@color/pinkColor"-->
+<!--                android:textSize="10sp"-->
+<!--                tools:ignore="SmallSp" />-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/linearLayout"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:minHeight="40dp"-->
+<!--                            android:layout_marginBottom="10dp">-->
+
+<!--                            <com.google.android.material.textfield.TextInputLayout-->
+<!--                                android:id="@+id/latitude"-->
+<!--                                android:layout_width="0dp"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:hint="@string/latitude"-->
+<!--                                app:startIconDrawable="@drawable/ic_baseline_add_location_24"-->
+<!--                                app:startIconContentDescription="temp"-->
+<!--                                app:endIconMode="clear_text"-->
+<!--                                android:layout_marginEnd="5dp">-->
+
+<!--                                <com.google.android.material.textfield.TextInputEditText-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:textSize="15sp"-->
+<!--                                    android:textColor="#4D000000"-->
+<!--                                    android:inputType="number"/>-->
+<!--                            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                            <com.google.android.material.textfield.TextInputLayout-->
+<!--                                android:id="@+id/longitude"-->
+<!--                                android:layout_width="0dp"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:hint="@string/longitude"-->
+<!--                                app:startIconDrawable="@drawable/ic_baseline_add_location_24"-->
+<!--                                app:startIconContentDescription="temp"-->
+<!--                                app:endIconMode="clear_text"-->
+<!--                                android:layout_marginStart="5dp">-->
+
+<!--                                <com.google.android.material.textfield.TextInputEditText-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:textSize="15sp"-->
+<!--                                    android:textColor="#4D000000"-->
+<!--                                    android:inputType="number"/>-->
+<!--                            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                        </LinearLayout>-->
+
+            <Button
+                android:layout_marginTop="-16dp"
+                android:id="@+id/update_address_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="@color/browser_actions_bg_grey"
+                android:text="@string/update_address_button"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:text="@string/update_address_description"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/max_occupancy_input"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="@string/max_occupancy_input"
+                app:endIconMode="clear_text"
+                app:startIconContentDescription="temp"
+                app:startIconDrawable="@drawable/ic_baseline_people_24"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--            <TextView-->
+<!--                android:id="@+id/maxOccupancy_required"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="start"-->
+<!--                android:text="@string/fieldRequiredMessage"-->
+<!--                android:textColor="@color/pinkColor"-->
+<!--                android:textSize="10sp"-->
+<!--                tools:ignore="SmallSp" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:text="@string/max_occupancy_description"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/uploadConfWifiFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/light_blue_A400"
+            android:src="@drawable/ic_baseline_cloud_upload_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="ContentDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/blurViewText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/blurViewText"
+            android:textSize="25sp"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    </eightbitlab.com.blurview.BlurView>
+
+</RelativeLayout>

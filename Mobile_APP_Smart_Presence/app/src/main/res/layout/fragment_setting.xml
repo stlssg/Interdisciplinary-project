@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".others.SettingFragment"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:minHeight="35dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_account_circle_24"
+                    android:layout_gravity="center"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/setting_account"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/light_blue_600"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:minHeight="35dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/setting_current_account"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="xxxxxx@gmail.com"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    tools:ignore="HardcodedText,RtlSymmetry"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:minHeight="30dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    tools:ignore="ContentDescription" />
+
+                <Button
+                    android:id="@+id/signOut"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textSize="10sp"
+                    android:text="@string/signOutButton"
+                    app:icon="@drawable/ic_baseline_logout_24"
+                    tools:ignore="RtlSymmetry,SmallSp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:paddingStart="10dp"
+                    android:backgroundTint="@color/teal_200"
+                    android:textColor="@android:color/black"/>
+
+                <Button
+                    android:id="@+id/resetPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="8sp"
+                    android:text="@string/reset_password_title"
+                    app:icon="@drawable/ic_baseline_lock_reset_24"
+                    tools:ignore="SmallSp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/teal_200"
+                    android:textColor="@android:color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="5dp"
+                tools:ignore="RtlSymmetry">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/account_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="You have the right to require to delete your data stored remotely. You can also switch to professional mode."
+                    android:textSize="10sp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    tools:ignore="HardcodedText,RtlSymmetry,SmallSp"
+                    android:textColor="@color/black_overlay"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:minHeight="35dp"
+                android:padding="5dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_access_time_24"
+                    android:layout_gravity="center"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/settingTimeOptions"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/light_blue_600"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:minHeight="35dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2.2"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setting_working_time_interval"
+                            android:textSize="15sp"
+                            android:gravity="center_vertical"
+                            android:paddingStart="10dp"
+                            tools:ignore="RtlSymmetry"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/black"/>
+
+                        <Spinner
+                            android:id="@+id/workingIntervalSpinner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setting_working_time_interval_description"
+                        android:textSize="10sp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        tools:ignore="RtlSymmetry,SmallSp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/black_overlay"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setting_start_time"
+                            android:textSize="15sp"
+                            android:gravity="center_vertical"
+                            android:paddingStart="10dp"
+                            tools:ignore="RtlSymmetry"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/setting_start_time"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:minHeight="10dp"
+                            android:textSize="15sp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:focusableInTouchMode="false"
+                            android:background="#20000000"
+                            tools:ignore="Autofill,LabelFor,TextFields" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setting_stop_time"
+                            android:textSize="15sp"
+                            android:gravity="center_vertical"
+                            android:paddingStart="10dp"
+                            tools:ignore="RtlSymmetry"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/setting_stop_time"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:minHeight="10dp"
+                            android:textSize="15sp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:focusableInTouchMode="false"
+                            android:layout_gravity="center"
+                            android:background="#20000000"
+                            tools:ignore="Autofill,LabelFor,TextFields" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settingStartStopTimeDescription"
+                        android:textSize="10sp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        tools:ignore="RtlSymmetry,SmallSp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/black_overlay"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:minHeight="35dp"
+                android:padding="5dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_circle_notifications_24"
+                    android:layout_gravity="center"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/setting_daily_notification"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/light_blue_600"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:minHeight="35dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    tools:ignore="ContentDescription" />
+
+                <Switch
+                    android:id="@+id/notificationOnOff"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    tools:ignore="RtlSymmetry,UseSwitchCompatOrMaterialXml"
+                    android:text="@string/setting_daily_notification_description"
+                    android:textColor="@color/black"
+                    android:textAlignment="viewStart"
+                    android:paddingStart="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:minHeight="35dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/frequentNotificationOnOffText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:layout_weight="4"
+                    android:text="@string/settingFrequentNotificationDescription"
+                    tools:ignore="RtlSymmetry"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"/>
+
+                <Switch
+                    android:id="@+id/frequentNotificationOnOff"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:ignore="RtlSymmetry,UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingHorizontal="5dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:paddingStart="10dp"
+                    android:text="@string/settingNotificationContent"
+                    tools:ignore="RtlSymmetry,SmallSp"
+                    android:textSize="10sp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black_overlay"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:minHeight="35dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:layout_weight="4"
+                    android:text="@string/local_notification_title"
+                    tools:ignore="RtlSymmetry"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"/>
+
+                <Switch
+                    android:id="@+id/localNotificationOnOff"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:ignore="RtlSymmetry,UseSwitchCompatOrMaterialXml" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingHorizontal="5dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:paddingStart="10dp"
+                    android:text="@string/local_notification_description"
+                    tools:ignore="RtlSymmetry,SmallSp"
+                    android:textSize="10sp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black_overlay"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:minHeight="35dp"
+                android:padding="5dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_flaky_24"
+                    android:layout_gravity="center"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/setting_sensitivity_title"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/light_blue_600"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:minHeight="35dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    tools:ignore="ContentDescription" />
+
+                <Switch
+                    android:id="@+id/sensitivityHighOrLow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    tools:ignore="RtlSymmetry,UseSwitchCompatOrMaterialXml"
+                    android:text="@string/low_s"
+                    android:textColor="@color/black"
+                    android:textAlignment="viewStart"
+                    android:paddingStart="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingHorizontal="5dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:paddingStart="10dp"
+                    android:text="@string/setting_sensitivity_description"
+                    tools:ignore="RtlSymmetry,SmallSp"
+                    android:textSize="10sp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black_overlay"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:minHeight="35dp"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_language_24"
+                    android:layout_gravity="center"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/setting_language"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/light_blue_600"/>
+
+                <Spinner
+                    android:id="@+id/languageSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

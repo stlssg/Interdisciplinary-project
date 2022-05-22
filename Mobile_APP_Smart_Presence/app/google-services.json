@@ -1,0 +1,192 @@
+{
+  "project_info": {
+    "project_number": "892318613323",
+    "project_id": "ip-polito-app-data",
+    "storage_bucket": "ip-polito-app-data.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892318613323:android:2726881807f449afa5b2ce",
+        "android_client_info": {
+          "package_name": "it.polito.interdisciplinaryProjects2021.smartpresence"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892318613323-srmnl9f1j136t0cjs7v3h44vl7rpcs16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU1pzhbtddIfFXajwHM1LzyolHN2rNRYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892318613323-qr7gmle90ur1qh9g52laui0so1583tak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892318613323:android:dbf14d7c452c625fa5b2ce",
+        "android_client_info": {
+          "package_name": "it.polito.ip2021.backgroundlocationupdate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892318613323-srmnl9f1j136t0cjs7v3h44vl7rpcs16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU1pzhbtddIfFXajwHM1LzyolHN2rNRYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892318613323-qr7gmle90ur1qh9g52laui0so1583tak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892318613323:android:34184ab1c06b0f86a5b2ce",
+        "android_client_info": {
+          "package_name": "it.polito.ip2021.geofence"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892318613323-srmnl9f1j136t0cjs7v3h44vl7rpcs16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU1pzhbtddIfFXajwHM1LzyolHN2rNRYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892318613323-qr7gmle90ur1qh9g52laui0so1583tak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892318613323:android:be0f42690d291baba5b2ce",
+        "android_client_info": {
+          "package_name": "it.polito.ip2021.smartpresence"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892318613323-153ibigum1qlrq4cl4vvj509atn0ek93.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "it.polito.ip2021.smartpresence",
+            "certificate_hash": "14a0a4e01113378daab73586986de880e0b3f243"
+          }
+        },
+        {
+          "client_id": "892318613323-srmnl9f1j136t0cjs7v3h44vl7rpcs16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU1pzhbtddIfFXajwHM1LzyolHN2rNRYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892318613323-qr7gmle90ur1qh9g52laui0so1583tak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892318613323:android:2af09c0e954c21b2a5b2ce",
+        "android_client_info": {
+          "package_name": "it.polito.test.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892318613323-srmnl9f1j136t0cjs7v3h44vl7rpcs16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU1pzhbtddIfFXajwHM1LzyolHN2rNRYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892318613323-qr7gmle90ur1qh9g52laui0so1583tak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892318613323:android:3ca014554a08e0c0a5b2ce",
+        "android_client_info": {
+          "package_name": "it.polito.test.wifichecking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892318613323-srmnl9f1j136t0cjs7v3h44vl7rpcs16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU1pzhbtddIfFXajwHM1LzyolHN2rNRYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892318613323-qr7gmle90ur1qh9g52laui0so1583tak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

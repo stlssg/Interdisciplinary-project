@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: org.osmdroid:osmdroid-shape:6.1.6@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7761f23b20159d1849ef28452997ffb4/transformed/jetified-osmdroid-shape-6.1.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b685e53a13e565b4a4144ee5c56fd8e5/transformed/jetified-osmdroid-shape-6.1.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ebd2466bec605b7bb09a947c84b0f625/transformed/jetified-osmdroid-shape-6.1.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d3ddfeec45975a31ecfc6096537082d8/transformed/jetified-osmdroid-shape-6.1.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a484dd9c11210b76c8e8c563010f5242/transformed/jetified-osmdroid-shape-6.1.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2bcf44e19315fecff6d84c9b117be4d3/transformed/jetified-osmdroid-shape-6.1.6/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3528fa07df1530f3ab6a5b07f9052c59/transformed/jetified-osmdroid-shape-6.1.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3528fa07df1530f3ab6a5b07f9052c59/transformed/jetified-osmdroid-shape-6.1.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3528fa07df1530f3ab6a5b07f9052c59/transformed/jetified-osmdroid-shape-6.1.6/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.osmdroid/osmdroid-shape/6.1.6/d252f980b71aa3c148e578b60e035f3609fc376/osmdroid-shape-6.1.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.osmdroid/osmdroid-shape/6.1.6/8f0cea633067a2f967c246c855c2a6627baba74e/osmdroid-shape-6.1.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

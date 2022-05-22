@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/drawable-v24/card_frame.xml" value="0.2555" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/drawable-v24/switch_trcks.xml" value="0.38229166666666664" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/drawable-v24/switch_tumbs.xml" value="0.38229166666666664" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/drawable/circle_selected.xml" value="0.2995" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/drawable/circle_unselected.xml" value="0.2995" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.307" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/drawable/ic_baseline_circle_notifications_24.xml" value="0.2935" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/drawable/ic_baseline_flaky_24.xml" value="0.2935" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/drawable/ic_baseline_login_24.xml" value="0.38229166666666664" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/drawable/ic_baseline_question_mark_24.xml" value="0.2555" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.2555" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/drawable/side_nav_bar.xml" value="0.1965" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/font-v26/font.xml" value="0.3963541666666667" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/font/font.xml" value="0.3963541666666667" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout-land/fragment_declaration.xml" value="0.3099647266313933" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout-land/fragment_graph.xml" value="0.3099647266313933" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout-land/fragment_info_brand.xml" value="0.3099647266313933" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout-land/fragment_map.xml" value="0.3099647266313933" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout-land/fragment_positioning_checking.xml" value="0.3099647266313933" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout-land/fragment_presence_detection.xml" value="0.3099647266313933" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout-land/fragment_setting.xml" value="0.264" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout-land/fragment_sign_in.xml" value="0.3099647266313933" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout-land/fragment_start.xml" value="0.3099647266313933" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout-land/fragment_wifi_checking.xml" value="0.3099647266313933" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/activity_check_in.xml" value="0.3283514492753623" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/activity_main.xml" value="0.24003623188405798" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/app_bar_main.xml" value="0.264" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/brand_info_card.xml" value="0.365036231884058" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/faq_card.xml" value="0.4276155717761557" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_dashboard.xml" value="0.322463768115942" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_declaration.xml" value="0.3229166666666667" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_faq.xml" value="0.3319746376811594" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_graph.xml" value="0.3233695652173913" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_info_brand.xml" value="0.3229166666666667" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_introduction.xml" value="0.322463768115942" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_manual_checking.xml" value="0.3283514492753623" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_manual_configuration.xml" value="0.3283514492753623" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_map.xml" value="0.3229166666666667" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_notifications.xml" value="0.322463768115942" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_positioning_checking.xml" value="0.3283514492753623" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_positioning_configuration.xml" value="0.3328804347826087" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_presence_detection.xml" value="0.322463768115942" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_pro_action.xml" value="0.4" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_professional.xml" value="0.36231884057971014" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_reset_password.xml" value="0.365036231884058" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_send_email.xml" value="0.365036231884058" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_setting.xml" value="0.322463768115942" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_sign_in.xml" value="0.3229166666666667" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_splash_base.xml" value="0.35507246376811596" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_start.xml" value="0.3491847826086957" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_wifi_checking.xml" value="0.3283514492753623" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/fragment_wifi_configuration.xml" value="0.4" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/notification.xml" value="0.34193840579710144" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/signintemp.xml" value="0.264" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/single_building_card.xml" value="0.365036231884058" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/single_occupant_email_card.xml" value="0.365036231884058" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/layout/splash_content.xml" value="0.35507246376811596" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/menu/configuration_menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/menu/faq_menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/menu/professional_fragment_menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/menu/question_mark_menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/menu/save_menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/study/Interdisciplinary_projects/Mobile_user_occupancy_app/Smart_Presence/app/src/main/res/menu/search_menu.xml" value="0.36614583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

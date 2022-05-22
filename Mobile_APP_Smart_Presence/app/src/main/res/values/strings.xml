@@ -1,0 +1,478 @@
+<resources>
+    <string name="app_name">Smart Presence</string>
+    <string name="fragment_name_introduction">Introduction</string>
+    <string name="fragment_name_presence_detection">Detection</string>
+    <string name="fragment_name_setting">Setting</string>
+    <string name="signInWelcome">Welcome</string>
+    <string name="signOutButton">sign out</string>
+    <string name="plzSign">Please sign the agreement!</string>
+    <string name="declaration_title"><![CDATA[Privacy Statement, Declaration, Agreement:]]></string>
+    <string name="declaration_content">
+        Please read carefully the following privacy statement of Smart Presence.\n
+        Smart presence is collecting your personal information including locations, WiFi connection, email, address, etc. This application will access your locations or WiFi information in order to detect your presence in target
+    building, and will also need your personal information to configure the firebase cloud firestore database which will store all of your data. Since Smart presence
+    focuses on residential area, the address of your home is also needed. \n
+        We promise that your information will not be exposed and accessed by anyone else. On top of that, your information will not be used for commercial use and we will
+    guarantee the security of the database so that your personal information will be preserved. Moreover, you have the right to delete your account and all data. As a
+    result, no copy of your data will be kept. \n
+        By signing this agreement, you agree to grant all-time-positioning permission, stop the battery optimization for Smart Presence and potentially change settings
+    dealing with devices from certain manufacturers. You agree to provide information about locations, address and email. You have read and understood all the sections
+    written above.</string>
+    <string name="finishSignIn">Finish</string>
+    <string name="checkbox">Agree</string>
+    <string name="locationPermission">Location permission page</string>
+    <string name="stopBatteryOptimization">Stop battery optimization</string>
+    <string name="manuallySettings"><![CDATA[If you haven\'t change the settings, please do it manually: grant all time positioning permission & stop battery optimization.]]></string>
+    <string name="setting_account">Account</string>
+    <string name="deleteDataButton">delete data</string>
+    <string name="settingTimeOptions">Time Options</string>
+    <string name="setting_working_time_interval">Working Time Interval (min):</string>
+    <string name="setting_working_time_interval_description">The duration between two consecutive detections. If you are always away from home for a long time, you can
+    choose a longer duration to save battery.</string>
+    <string name="setting_start_time">Start time:</string>
+    <string name="setting_stop_time">Stop time:</string>
+    <string name="settingStartStopTimeDescription">You can choose when the detection will start or stop during a day. Please note that the stop time should come after the start time.</string>
+    <string-array name="working_interval">
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+    </string-array>
+    <string name="deleteDataMessage">You have successfully deleted you data stored in cloud database!</string>
+    <string name="setting_daily_notification">Daily Notification</string>
+    <string name="setting_daily_notification_description">Keep receiving daily notification</string>
+    <string name="notificationOnMessage">You will receive a push notification at 14:00 everyday!</string>
+    <string name="notificationOffMessage">You will no longer receive the daily push notification!</string>
+    <string name="setting_language">Language</string>
+    <string-array name="language">
+        <item>English</item>
+        <item>Italian</item>
+        <item>Chinese</item>
+    </string-array>
+    <string name="setting_alert_title">Delete Confirmation</string>
+    <string name="setting_alert_content">Are you sure you want to delete all your data stored in cloud database?</string>
+    <string name="setting_alert_cancel">Cancel</string>
+    <string name="setting_alert_confirm">Yes</string>
+    <string name="configuration_menu">Configuration</string>
+    <string name="fragment_wifi_checking_name">WiFi Checking</string>
+    <string name="fragment_positioning_checking_name">Position Checking</string>
+    <string name="fragment_manual_checking_name">Manual Checking</string>
+    <string name="fragment_configuration_name">Configuration</string>
+    <string name="ssid_input">SSID (WiFi Name)</string>
+    <string name="bssid_input">BSSID (Unique ID)</string>
+    <string name="update_wifi_info_button">Update WIFI information</string>
+    <string name="update_wifi_info_description">If the current information is not correct or you don\'t know what should be inputted in the fields, please click the
+        button to show the WiFi information about current WiFi connection, otherwise, please input manually.</string>
+    <string name="address_input">Address of target building</string>
+    <string name="update_address_button">Select from map</string>
+    <string name="update_address_description">Click the button to select your target building from a map. In any case, please make sure the inputs are as same as
+    those from users in the same target building.</string>
+    <string name="max_occupancy_input">Maximum expected occupancy</string>
+    <string name="max_occupancy_description">The maximum number of people staying in the target building.</string>
+    <string name="save_menu">Save</string>
+    <string name="configuration_confirm_title">Please confirm your configuration.</string>
+    <string name="configuration_alert_confirm_button">Yes, confirmed</string>
+    <string name="configuration_alert_toast">You have successfully configured your profile.</string>
+    <string name="no_wifi_connection_message">Please make sure you are connecting to WiFi or input manually.</string>
+    <string name="configuration_empty_input_message">Please do not leave empty space.</string>
+    <string name="save_location_button">SAVE</string>
+    <string name="map_fragment_name">Map</string>
+    <string name="turn_on_location_message">Please turn on your location service.</string>
+    <string name="map_error_message">Please restart your WiFi connection and location service.</string>
+    <string name="success_location_save">You have successfully selected your location.</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">longitude</string>
+    <string name="energySavingModeOnOff">Battery saving mode</string>
+    <string name="energySavingModeAlertTitle">Energy Saving Mode</string>
+    <string name="energySavingModeOnMessage">By turning on the battery saving mode, you will rely on the so-called geofence to detect presence, which is not accurate
+    because it depends on the location update from other apps!</string>
+    <string name="energySavingModeOffMessage">By turning off the battery saving mode, the accuracy of detection is increased, but you may experience quicker battery drop!</string>
+    <string name="energySavingModeAlertButton">Understood</string>
+    <string name="energySavingModeAlertNoButton">Do not change</string>
+    <string name="alreadyStopBatteryOptimization">You have already turn off the battery optimization for this app.</string>
+    <string name="alreadyGrantAllTimePositioningPermission">You have already granted the permission for this app.</string>
+    <string name="introduction_text_main">
+        Welcome to Smart Presence. The objective of this application is to detect your presence in target building and derive the building occupancy profile to help with
+    your smart building management. In general, we provide three methods for you to choose: WiFi based method, positioning based method and manual method. \n \n
+        WiFi based: the app will periodically compare the SSID (WiFi name) and BSSID (a unique ID assigned by the router) of your current WiFi connection with the target
+    one configured by you so that you will be considered as being present if the they match. As a result, the app can derive the period of you staying or leaving the target
+    building. \n \n
+        Positioning based: the concept is that you will be considered as presence if you are within a certain range around the target building. In particular, the app can
+    either periodically update your location with latitude and longitude to check your presence, which costs more battery or passively listen the location updates from other
+    apps to trigger a geofence, which is less energy consumed. \n \n
+        Manual method: you simply need to click the shortcuts provided by the app to check in or out anytime you entering or leaving the target building. It totally relies on
+    your habits. \n \n
+        We strongly suggest that before starting the services, go to setting page in which you can deal with your account, change the interval between two detections, change
+    for what period during a day the service should work, determine whether to receive daily notification or not and change language. \n \n
+        Finally, the app will work in the background and your data will be upload and stored in firestore database for further analysis.
+    </string>
+    <string name="startButton">Start</string>
+    <string name="reStartButton">Restart</string>
+    <string name="stopButton">Stop</string>
+    <string name="showInfoButton">Show working status</string>
+    <string name="introduction_more">If you have not grant the all time positioning permission and stop battery optimization, please do it manually.</string>
+    <string name="introduction_plus">Furthermore, for devices from certain manufacturers, you may need to manually change some settings. Please check out here.</string>
+    <string name="fragment_info_brand_name">Information For Different Devices</string>
+    <string name="huawei_description">Huawei: even if you have disabled the battery optimization from the app, you still need to do it in your system setting page. Moreover,
+    for older version of Huawei devices, the app works not perfectly due to intrinsic property of its customized Android system which significantly limit the background
+    services, thus, please turn on the daily notification and re-start the service everyday or when you wakeup in the morning. However, for later version, due to the
+    restriction of Google, the positioning based method does not work due to the fact that Google play service no longer supports Huawei.</string>
+    <string name="samsung_description">Samsung: it does put some restrictions on background service so that please turn on the daily notification. On the other hand,
+    you still need to manually grant the permission to run background service.</string>
+    <string name="onePlus_description">OnePlus: you have to manually disable to battery optimization which cannot be stopped in the app for onePlus.</string>
+    <string name="meizu_description">MEIZU: you need to go to the system setting page and find "privacy and security", in which you can enable the background running for
+    this application.</string>
+    <string name="more_info_devices">For more information, please contact s287288@studenti.polito.it. </string>
+    <string name="wifi_guidance">
+        In order to utilize the WiFi connection to detect user\'s presence, you need to follow several steps: \n \n
+        1. Go to the configuration page by clicking the three dots on right-top corner. \n \n
+        2. In the configuration page, you can generate SSID and BSSID of your current WiFi connection or manually input them (in such case, please make sure you are right!!!).
+        You also need to decide the address which can be inputted manually or selected from a map. At last, you need to define what is the maximum occupancy of target building. \n \n
+        3. Click on right-top corner to save your configuration and then come back to this page. \n \n
+        4. Click "START" to start the service and then the service will run in the background automatically according to your settings. \n \n
+        5. You can click "STOP" to terminate the service. The "START" button will become "RESTART" after clicking "START" so that you can restart your service whenever you want. \n \n
+        6. Additionally, you can also click "SHOW WORKING STATUS" to check current service condition (ENQUEUED: the service is waiting in the line for the next detection;
+        RUNNING: the service is running and performing the detection; CANCELLED: the service has been terminated by you; NOTHING: you have not define any service).
+    </string>
+    <string name="startServiceMessage">You have successfully started the service!</string>
+    <string name="stopServiceMessage">You have successfully stopped the service!</string>
+    <string name="restartServiceMessage">You have successfully restarted the service!</string>
+    <string name="workStatus">The status of your current service is:</string>
+    <string name="wifi_based_method_name">WiFi Based Method</string>
+    <string name="positioning_based_method_name">Positioning Based Method</string>
+    <string name="manual_method_name">Manual Method</string>
+    <string name="positioning_guidance">
+        In order to utilize the Google positioning service to detect user\'s presence, you need to follow several steps: \n \n
+        1. Go to the configuration page by clicking the three dots on right-top corner. \n \n
+        2. In the configuration page, you need the address and location (latitude and longitude) of target building, which can be inputted manually (in such case, please
+        make sure the inputs are right!!!) or selected from a map. Moreover, you need to define what is the maximum occupancy of target building. At last, you can also choose to whether
+        to disable battery saving mode or not. If you stick to default one without battery saving, the app will update location by itself periodically, which may cost more
+        battery. On the other hand, if you change to battery saving mode, you won\'t have significant battery drop, however, the accuracy of detection is not good since the app
+        will refer to so-called geofence which totally relies on the location update from other apps. We suggest that you can turn on the battery saving mode only when you
+        often use apps which will require location service, e.g. Google Map. \n \n
+        3. Click on right-top corner to save your configuration and then come back to this page. \n \n
+        4. Click "START" to start the service and then the service will run in the background automatically according to your settings. \n \n
+        5. You can click "STOP" to terminate the service. The "START" button will become "RESTART" after clicking "START" so that you can restart your service whenever you want. \n \n
+        6. Additionally, you can also click "SHOW WORKING STATUS" to check current service condition (ENQUEUED: the service is waiting in the line for the next detection;
+        RUNNING: the service is running and performing the detection or the geofence is working; CANCELLED: the service has been terminated by you; NOTHING: you have not
+        define any service or the geofence triggering has been stopped).
+    </string>
+    <string name="manual_guidance">
+        This method totally rely on your habits of clicking on the buttons whenever you entering or leaving the target building, which is not easy for daily routines, so
+        please only choose this method if you believe you can remember it and do not want your location or WiFi connection be exposed. \n \n
+        In order to manually record the entering or leaving to determine user\'s presence, you need to follow several steps: \n \n
+        1. Go to the configuration page by clicking the three dots on right-top corner. \n \n
+        2. In the configuration page, you need the address of target building, which can be inputted manually (in such case, please make sure the inputs are right!!!) or
+        selected from a map. Finally, you need to define what is the maximum occupancy of target building. \n \n
+        3. Click on right-top corner to save your configuration and then come back to this page. \n \n
+        4. Click "CHECK IN" to record your entering whenever you enter the target building and the data will be uploaded. \n \n
+        5. Click "CHECK OUT" to record your leaving whenever you leave the target building and the data will be uploaded. \n \n
+        Note that we provide shortcuts for these two buttons so that you can long-click on the icon of the app and then drag the shortcuts to somewhere convenient. As
+        a result, you don\'t have to come to this page to check in or out every time.
+    </string>
+    <string name="checkInButton">check in</string>
+    <string name="checkOutButton">check out</string>
+    <string name="checkInMessage">The entering has been successfully recorded!</string>
+    <string name="checkOutMessage">The leaving has been successfully recorded!</string>
+    <string name="start_fragment_title">Smart Presence</string>
+    <string name="start_fragment_content">Smart Home</string>
+    <string name="pairDeclaration1">grant all time positioning permission</string>
+    <string name="pairDeclaration2">stop battery optimization</string>
+    <string name="pairIntroduction1">all time positioning permission</string>
+    <string name="pairIntroduction2">stop battery optimization</string>
+    <string name="pairIntroduction3">here</string>
+    <string name="notInMyPositionMessage">If the map is not centered in your current location, please open Google map and restart the app.</string>
+    <string name="configurationNotFinishedMessage">Please click the three dots on top-right corner and make sure you have finished the configuration.</string>
+    <string name="workStatusString_ENQUEUED">ENQUEUED</string>
+    <string name="workStatusString_RUNNING">RUNNING</string>
+    <string name="workStatusString_CANCELLED">CANCELLED</string>
+    <string name="workStatusString_NOTHING">NOTHING</string>
+    <string name="onMapMarkerClickMessage">The Address is: </string>
+    <string name="geocoderNotWorkingMessage">The GeoCoder service is not implemented in your devices, you need to input the address manually.</string>
+    <string name="configurationAlertAddressName">Address</string>
+    <string name="configurationAlertMaxName">Maximum expected occupants</string>
+    <string name="configurationAlertLatName">Latitude</string>
+    <string name="configurationAlertLonName">Longitude</string>
+    <string name="notificationTitle">Please restart the service.</string>
+    <string name="notificationContent">Guarantee the long term work.</string>
+    <string name="subscribeNotSuccess">The pushed notification service is somehow stopped, please try to restart it later.</string>
+    <string name="LOGINPAGE_log_in_title">Log In</string>
+    <string name="LOGINPAGE_sign_up_title">Sign Up</string>
+    <string name="email_as_user_name">Email as User Name</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="LOGINPAGE_or">OR</string>
+    <string name="LOGINPAGE_log_in_and_sign_up_title">Sign Up &amp; Log In</string>
+    <string name="logInUnsuccess">Cannot log in now, please try it later.</string>
+    <string name="logInSuccess">You have successfully logged in.</string>
+    <string name="logInAndRegisteredSuccess">You have successfully created your account and logged in.</string>
+    <string name="notEmailMessage">The user name should be an email.</string>
+    <string name="userExist">The email is used, please choose another one.</string>
+    <string name="passwordSettingNotSame">The passwords are not the same.</string>
+    <string name="noSuchUser">The user doesn\'t exist.</string>
+    <string name="passwordNotCorrect">The password you input is not correct.</string>
+    <string name="shortcutCheckInTitle">Check In</string>
+    <string name="shortcutCheckOutTitle">Check Out</string>
+    <string name="shortcutCheckInLongTitle">Register the IN action</string>
+    <string name="shortcutCheckOutLongTitle">Register the OUT action</string>
+    <string name="shortcutCheckInMessage">Your check-in action has been recorded.</string>
+    <string name="shortcutCheckOutMessage">Your check-out action has been recorded.</string>
+    <string name="shortcutNoConfiguration">Please configure your profile before checking in or out.</string>
+    <string name="fieldRequiredMessage">This field is required.</string>
+    <string name="fragment_name_graph">Graph</string>
+    <string name="logInAsProfessionalTitle">Log in as a professional(?).</string>
+    <string name="whatIsProfessionalTitle">What is a professional?</string>
+    <string name="whatIsProfessionalMessage">As a professional, you can visualize the occupancy profile in graphs and potentially perform other actions.</string>
+    <string name="fragment_detection_title">Presence Detection</string>
+    <string name="restartAppMessage">Please restart the app!</string>
+    <string name="graphDailyTitle">Daily Occupancy</string>
+    <string name="graphDailySubtitle">Average value for each hour during a day</string>
+    <string name="graphYTitle">Percentage[%]</string>
+    <string name="graphOptionDaily">Daily</string>
+    <string name="graphOptionWeekly">Weekly</string>
+    <string name="graphOptionMonthly">Monthly</string>
+    <string name="graphOptionYearly">Yearly</string>
+    <string name="graphOptionTotal">Total</string>
+    <string name="graphNoDataMessage">Currently, no data is available for this option.</string>
+    <string name="graphErrorMessage">Sorry, the app has problems showing graph, which may due to connection failure or other reasons. Please try it later.</string>
+    <string name="settingFrequentNotificationDescription">More frequent notification</string>
+    <string name="frequentNotificationOnMessage">Beside the normal one, you will receive daily pushed notification more frequently, once at 7:00 and once at 18:00.</string>
+    <string name="frequentNotificationOffMessage">You will no longer receive frequent notification.</string>
+    <string name="settingNotificationContent">We strongly suggest you to turn on the daily notification so that you can restart your background service in case it stops.
+    We will inspect the behaviour of your smart phone and we will let you know when you need to turn on the frequent notification.</string>
+    <string name="frequentNotificationRemindTitle">Please turn on frequent notification</string>
+    <string name="frequentNotificationRemindMessage">We detect that the background service does not perform very well in your device. We strongly suggested that you turn
+    on the frequent notification to remind yourself to restart the service more frequently. Thanks.</string>
+    <string name="frequentNotificationRemindPositiveButton">Go to setting</string>
+    <string name="firstInstallRemindTitle">Reminding upon first installment</string>
+    <string name="firstInstallRemindMessage">Dear user, the app relies strongly on the background service and it may requires some customized settings in your device, which
+    cannot be modified by the app itself but only by you manually, so please make sure you have enabled the permission or changed the settings to allow background service for
+    this app!!! Moreover, you also need to enable WiFi and location service!!! Thank you for your cooperation.</string>
+    <string name="radius_spinner">Radius(m) determining presence</string>
+    <string name="radius_spinner_description">The radius that defines the range in which you will be considered as presence. The larger the value, the less energy consumed.</string>
+    <string-array name="radius_list">
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>400</item>
+    </string-array>
+    <string name="professionalAccountSettingDescription">You have the right to require to delete your data stored remotely. You can also switch to regular mode.</string>
+    <string name="regularAccountSettingDescription">You have the right to require to delete your data stored remotely. You can also switch to professional mode.</string>
+    <string name="professionalAccountModeName">regular mode</string>
+    <string name="regularAccountModeName">professional mode</string>
+    <string name="modeSwitchTitle">Mode Switching</string>
+    <string name="modeSwitchButton">Yes, switch</string>
+    <string name="modeSwitchMessage_regularAccount">By switching to professional mode, you can also visualize your building occupancy profile and potentially perform other actions.</string>
+    <string name="modeSwitchMessage_professionalAccount">By switching to regular mode, you will go back to the layout with basic features.</string>
+    <string name="proActionTabName">Info</string>
+    <string name="proFragmentName">Pro</string>
+    <string name="proFragmentTitle">Professional Actions</string>
+    <string name="wifiOrLocationServiceOffAlertTitle">Essential service is off</string>
+    <string name="wifiOffLocationOffAlertMessage">We notice that the WiFi and location services have been turned off. They are very crucial to the app. Please enable them.</string>
+    <string name="wifiOnLocationOffAlertMessage">We notice that the location services has been turned off. It is very crucial to the app. Please enable it.</string>
+    <string name="wifiOffLocationOnAlertMessage">We notice that the WiFi services has been turned off. It is very crucial to the app. Please enable it.</string>
+    <string name="faqFragmentTitle">Questions&amp;Answers</string>
+    <string-array name="question_list">
+        <item>Which method should I use for presence detection?</item>
+        <item>Why do I have to disable the battery optimization?</item>
+        <item>Why do I have to grant the all time positioning permission?</item>
+        <item>What device settings should I change?</item>
+        <item>Why the app does not work properly?</item>
+        <item>Which mode should I select, regular or professional?</item>
+        <item>For WiFi checking method, what is SSID and BSSID?</item>
+        <item>What kind of time setting should I refer to?</item>
+        <item>How can I get the professional access permission?</item>
+        <item>Why I cannot use the map to select address?</item>
+    </string-array>
+    <string-array name="answer_list">
+        <item>We have provided three methods in total. In general, the WiFi method is the most recommended one because it is simple and reliable.
+    However, if there\'s no WiFi device installed in your target building or you simply do not want to use WiFi, the positioning method is a more versatile one which
+    only requires the location service of your smart phone, but it is not as reliable as the previous one and may consume more battery. At last, there is always the
+    manual one, but you need to manually click the check in/out button, which totally relies on your habit. The advantage of it is that it is very reliable and accurate.</item>
+        <item>The core function of this app will exploit the feature of Android background work periodically in a long term, which may be affected and
+    stopped due to battery optimization. In order to guarantee the continuity of the service to derive a reliable occupancy profile, it is mandatory to do it.</item>
+        <item>First of all, the service will work for very long time in the background,
+    which can be done only by all time permission. Secondly, both of the WiFi method and positioning
+    method require location service to be turned on to access certain information.</item>
+        <item>This totally depend on the specific device you are using since different manufacturers
+    have their own customized Android system which limit the background service in different way. In general, the most
+    common settings you need to vary are: all time positioning permission, battery optimization, background service allowance.</item>
+        <item>There are several scenarios: permissions are not granted; background service is
+    restricted; WiFi service is turned off; location service is turned off; you seldom use your phone.</item>
+        <item>In most cases, it is suggested to select regular mode since it is lightweight
+    and simple. If you are an expert or related personnel, the professional mode can help you to perform
+    more actions remotely. However, it is totally up to you, the professional mode won\'t cost you more.</item>
+        <item>SSID is the so-called service set identifier, which is simply the WiFi name
+    while BSSID is basic service set identifier, which is a 48-bit label assigned by the router. They are
+    both used to identify the router in the target building.</item>
+        <item>Normally, it is suggested to follow the default ones, since they have higher
+    accuracy and can cover most meaningful time period during a day. However, you can choose to customize
+    based on your own behaviour. For instance, if you always work outside during the night, you need to
+    change the stop time to a late time instance.</item>
+        <item>You need to be an expert who works with our desktop software, in which you can retrieve the code for permission.
+        Otherwise, even if you refer to professional mode, you can only access your own information.</item>
+        <item>There are multiple reasons: your location service is turned off or failed, your device does not
+        support the so-called geocoder function, your device does not support google service, your internet
+        connection is off. In any case, if you cannot access the address and location, you can always manually
+        input them. However, you need to make sure that the address is exactly as same as other occupants and
+        the location including latitude and longitude has to be correct and precise.</item>
+    </string-array>
+    <string name="question_1">Which method should I use for presence detection?</string>
+    <string name="answer_1">We have provided three methods in total. In general, the WiFi method is the most recommended one because it is simple and reliable.
+    However, if there\'s no WiFi device installed in your target building or you simply do not want to use WiFi, the positioning method is a more versatile one which
+    only requires the location service of your smart phone, but it is not as reliable as the previous one and may consume more battery. At last, there is always the
+    manual one, but you need to manually click the check in/out button, which totally relies on your habit. The advantage of it is that it is very reliable and accurate.</string>
+    <string name="question_2">Why do I have to disable the battery optimization?</string>
+    <string name="answer_2">The core function of this app will exploit the feature of Android background work periodically in a long term, which may be affected and
+    stopped due to battery optimization. In order to guarantee the continuity of the service to derive a reliable occupancy profile, it is mandatory to do it.</string>
+    <string name="question_3">Why do I have to grant the all time positioning permission?</string>
+    <string name="answer_3">First of all, the service will work for very long time in the background,
+    which can be done only by all time permission. Secondly, both of the WiFi method and positioning
+    method require location service to be turned on to access certain information.</string>
+    <string name="question_4">What device settings should I change?</string>
+    <string name="answer_4">This totally depend on the specific device you are using since different manufacturers
+    have their own customized Android system which limit the background service in different way. In general, the most
+    common settings you need to vary are: all time positioning permission, battery optimization, background service allowance.</string>
+    <string name="question_5">Why the app does not work properly?</string>
+    <string name="answer_5">There are several scenarios: permissions are not granted; background service is
+    restricted; WiFi service is turned off; location service is turned off; you seldom use your phone.</string>
+    <string name="question_6">Which mode should I select, regular or professional?</string>
+    <string name="answer_6">In most cases, it is suggested to select regular mode since it is lightweight
+    and simple. If you are an expert or related personnel, the professional mode can help you to perform
+    more actions remotely. However, it is totally up to you, the professional mode won\'t cost you more.</string>
+    <string name="question_7">For WiFi checking method, what is SSID and BSSID?</string>
+    <string name="answer_7">SSID is the so-called service set identifier, which is simply the WiFi name
+    while BSSID is basic service set identifier, which is a 48-bit label assigned by the router. They are
+    both used to identify the router in the target building.</string>
+    <string name="question_8">What kind of time setting should I refer to?</string>
+    <string name="answer_8">Normally, it is suggested to follow the default ones, since they have higher
+    accuracy and can cover most meaningful time period during a day. However, you can choose to customize
+    based on your own behaviour. For instance, if you always work outside during the night, you need to
+    change the stop time to a late time instance.</string>
+    <string name="geofenceWorkingStatus">Geofence is working</string>
+    <string name="geofenceNotWorkingStatus">Geofence is not working</string>
+    <string name="blurViewText">Please stop the service that is running before changing any configurations!</string>
+    <string name="splash1Title">Presence to Occupancy</string>
+    <string name="splash1Content">By detecting your presence in target building, the occupancy can be
+    derived to support your smart building management.</string>
+    <string name="splash2Title">Three Approaches</string>
+    <string name="splash2Content">The app offers three methods in total. You can choose among them
+    for your own convenience.</string>
+    <string name="splash3Title">More for Experts</string>
+    <string name="splash3Content">If you are a professional who works on smart building, data analysis
+    or related regions, you have more functions for visualization, etc.</string>
+    <string name="splashButtonSkip">Skip</string>
+    <string name="splashButtonStart">Get Started</string>
+    <string name="wifi_based_method_guidance_title">WiFi Based Method Guidance:</string>
+    <string name="positioning_based_method_guidance_title">Positioning Based Method Guidance:</string>
+    <string name="manual_method_guidance_title">Manual Method Guidance:</string>
+    <string name="presence_detection_page_content_title">Presence Detection Methods</string>
+    <string name="presence_detection_page_content_subtitle">Long-click to select/unselect method, short-click to see its guidance</string>
+    <string name="pro_action_description_at_end">More functions are coming.</string>
+    <string name="pro_action_info_information_title">Information of target building:</string>
+    <string name="pro_action_info_statistics_title">Statistics:</string>
+    <string name="pro_action_info_current_number">Current number of occupants in target building</string>
+    <string name="pro_action_info_avg_selected">Average hourly occupancy (selected interval):</string>
+    <string name="pro_action_info_avg_all">Average hourly occupancy (all day):</string>
+    <string name="pro_action_info_not_available">Not available</string>
+    <string name="pro_action_info_max_string">max</string>
+    <string name="wifi_based_card_description">Periodically check your WiFi connection and determine your presence based on configuration</string>
+    <string name="positioning_based_card_description">Periodically check your location and compare with your current location, or use Geofence</string>
+    <string name="manual_based_card_description">Manually click on buttons to check in or out whenever you enter or leave target building</string>
+    <string name="simple_show_status">Status</string>
+    <string name="already_selected_method_message">You have to unselect the chosen one before changing methods</string>
+    <string name="no_selection_go_conf_message">You need to select one method before configuring your settings</string>
+    <string name="no_selection_manual_click_button">You need to select manual method to exploit check-in or check-out function</string>
+    <string name="no_selection_click_start">You need to select WiFi based or Positioning based method to start the background service</string>
+    <string name="long_click_card_no_stop_service">To unselect or change the method, you have to stop the service</string>
+    <string name="show_status_for_manual_method">you have chosen the manual method and there is no status for it</string>
+    <string name="show_status_for_no_selection">you have not selected any methods yet and there is no status now</string>
+    <string name="graph_no_data_message">No Data is Available</string>
+    <string name="building_list_title">Target Building List</string>
+    <string name="grant_access_title">Grant Professional Access</string>
+    <string name="code_title">Access code</string>
+    <string name="code_check_title">Verify</string>
+    <string name="access_grant_description">Input the code retrieved from tha desktop software and click on the verification button to be able to access more contents.</string>
+    <string name="no_building_for_list_message">No Building is available</string>
+    <string name="select_address_message">You have successfully selected the target building</string>
+    <string name="not_grant_pro_access_message">You do not have the access permission yet</string>
+    <string name="wrong_code_message">The code you input is wrong</string>
+    <string name="right_code_message">The code is correct, now you can access the information for all buildings</string>
+    <string name="long_click_check_message">Long click buttons to check in/out at a specific time.</string>
+    <string name="specific_check_title">Check In/Out at a specific time</string>
+    <string name="date_string">Date</string>
+    <string name="time_string">Time</string>
+    <string name="no_target_building_message">You haven\'t specify your target building yet.</string>
+    <string name="target_msg_card">This is the target building of your own.</string>
+    <string name="email_sent_msg">The message including your password has been sent to your email address.</string>
+    <string name="pair_delete">delete your data</string>
+    <string name="reset_password_title">Reset Password</string>
+    <string name="reset_password_gmail_msg">You are using gmail with google login now, you cannot change password in this case.</string>
+    <string name="old_p_str">Old password</string>
+    <string name="new_p_str">New password</string>
+    <string name="repeat_p_str">Repeat new password</string>
+    <string name="confirm_p_str">Confirm</string>
+    <string name="reset_p_not_same">The new passwords are not the same</string>
+    <string name="new_p_used">The new password is alread used.</string>
+    <string name="successfully_reset_p">You have successfully changed your password.</string>
+    <string name="send_email_frag_title">Send Email</string>
+    <string name="send_email_address_title">Address:</string>
+    <string name="send_email_subject_title">Subject:</string>
+    <string name="send_email_content_title">Body:</string>
+    <string name="send_email_btn">Send</string>
+    <string name="upload_alert_btn">Upload</string>
+    <string name="upload_success_msg">You have successfully uploaded the configuration that can be downloaded by other occupants with the shared code.</string>
+    <string name="upload_alert_content">As the building manager, you can upload the configuration to share with other occupants for their convenience by following shared code:</string>
+    <string name="upload_alert_title">Upload configuration and generate shared code.</string>
+    <string name="already_upload_msg">You have already upload the configuration and the code is:</string>
+    <string name="download_conf_title">Download Configuration</string>
+    <string name="shared_code_title">Shared code</string>
+    <string name="shared_code_description">You can contact the building manager or related personnel of your target building to retrieve the shared code to download the common configuration to start the service.</string>
+    <string name="no_match_shared_code_msg">There is no matching or your code is wrong.</string>
+    <string name="finish_download_conf_msg">You have successfully downloaded the configuration and you can start the service or check in/out right now.</string>
+    <string name="graphWeeklyTitle">Weekly Occupancy</string>
+    <string name="graphWeeklySubtitle">Average value for each hour during whole week</string>
+    <string-array name="monthList">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <string name="setting_sensitivity_title">Dormant State Sensitivity</string>
+    <string name="high_s">High sensitivity</string>
+    <string name="low_s">Low sensitivity</string>
+    <string name="setting_sensitivity_description">It\'s hard to distinguish the duration around 1 hour either for dormant state or going out. Please refer to high sensitivity if the frequency of you going out for just around 1 hour is much less than the frequency of your device being in sleeping mode. This is very crucial for determining your occupancy.</string>
+    <string name="no_occupants_for_list_msg">No occupant is available</string>
+    <string name="service_status_title">Service status:</string>
+    <string name="last_detection_title">Last detection:</string>
+    <string name="timestamp_title">Timestamp:</string>
+    <string name="presence_condition_title">Presence condition:</string>
+    <string name="time_option_title">Time options:</string>
+    <string name="start_time_title">Start time per day:</string>
+    <string name="stop_time_title">Stop time per day:</string>
+    <string name="work_interval_title">Service working interval:</string>
+    <string name="discarded_num_title">Number of discarded periods:</string>
+    <string name="most_recommended">*Most recommended</string>
+    <string name="start_popUp_title">Reminding for settings</string>
+    <string name="start_popUp_msg">Please make sure you have disabled or changed all settings that may block background service, like battery optimization, background service permit, etc!!! Please make sure you have turned on the WiFi service and location service!!!</string>
+    <string name="address_remind_title">Reminding of address input</string>
+    <string name="address_remind_msg">If the address you selected turns out to be incorrect, it might be due to Geocoder in your device is not working. You can always choose to input manually but make sure it\'s exactly the same as other occupants!!!</string>
+    <string name="local_notification_title">Local daily notification</string>
+    <string name="local_notification_description">Since not all devices work with firebase pushed notification, we also introduce local ones. In case you get duplicate notifications at the same time, you can turn this off because you device work well with cloud message.</string>
+    <string name="no_google_service_msg">The Google service is not available in your device, please do not use the map or positioning method but input manually.</string>
+    <string name="from_local_notification_title">Local duplicate notification remind</string>
+    <string name="from_local_notification_content">You may receive this duplicate notification since your device may not work well with firebase cloud message. In case you are able to receive the cloud message, you can go to setting to disable local one to avoid duplicate notifications.</string>
+</resources>
