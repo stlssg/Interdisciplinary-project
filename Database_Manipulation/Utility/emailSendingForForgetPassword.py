@@ -9,8 +9,9 @@ from firebase_admin import firestore
 
 global db
 
-username = 'ip2021polito@gmail.com'
-password = 'songzhaowang-2021polito'
+# connot expose them to public, this is an example
+username = 'xxx@xxx.com'
+password = '...'
 broker = 'broker.emqx.io' #'test.mosquitto.org'
 port = 1883
 topic = 'POLITO_ICT4SS_IP/smartPresenceApp/forgetPassword' 
